@@ -1,0 +1,82 @@
+import React from 'react'
+import Link from 'gatsby-link'
+import './sidebar.css'
+
+const Header = () => (
+  <div>
+    <section className="options">
+       <div className="section__inner">
+          <label for="option-radio-12h">
+            <span>12 <small>HRS</small></span>
+            <input id="option-radio-12h"
+             name="option-radio"
+             type="radio"
+             data-option
+             data-option-period="12h" />
+          </label>
+          <label for="option-radio-1d">
+            <span>24 <small>HRS</small></span>
+            <input id="option-radio-1d"
+             name="option-radio"
+             type="radio"
+             data-option
+             data-option-period="1d" />
+          </label>
+          <div className="handle"></div>
+       </div>
+    </section>
+    <section className='main-nav'>
+      <div className="section__inner">
+        <section className="side-nav">
+           <div className="section__inner">
+              <div className="logo">
+                 <h1>BIGSOUND Buzz</h1>
+                 <a className="by-bolster" href="http://blstr.co" target="_blank">by Bolster.</a>
+              </div>
+              <ul className="side-nav">
+                <li className="separator top">
+                  <div className="separator__inner">
+                  <span/><span>*</span><span>★</span>
+                    <span>FiveKill Records</span>
+                  <span>★</span><span>*</span></div>
+                </li>
+                <li>
+                  <Link className='nav-link' to='/artists'>
+                    <div className="row">
+                      <div className="chart-name">ARTISTS</div>
+                    </div>
+                  </Link>
+                </li>
+                <li>
+                  <Link className='nav-link' to='/releases'>
+                    <div className="row">
+                      <div className="chart-name">RELEASES</div>
+                    </div>
+                  </Link>
+                </li>
+                 <li>
+                  <Link className='nav-link' to='/news'>
+                    <div className="row">
+                      <div className="chart-name">NEWS</div>
+                    </div>
+                  </Link>
+                </li>
+                <li>
+                  <Link className='nav-link' to='/about'>
+                    <div className="row">
+                      <div className="chart-name">ABOUT</div>
+                    </div>
+                  </Link>
+                </li>
+               
+
+              </ul>
+           </div>
+        </section>
+        
+     </div>
+    </section>
+  </div>
+)
+
+export default Header

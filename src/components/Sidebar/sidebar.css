@@ -1,0 +1,201 @@
+section.side-nav{
+    background-color:#fee4dd;
+    color:#761ed6;
+    overflow:auto;
+    font-weight:500;
+    text-align:left;
+    border-right:2px solid #761ed6;
+    height: 100%;
+}
+ul.side-nav{
+    display: none;
+}
+@media only screen and (min-width:768px){
+    section.side-nav{
+        width:230px;
+        padding-bottom:0;
+        height:100vh;
+    }
+    ul.side-nav{
+        display: block;
+    }
+}
+a.nav-link,a.nav-link:hover{
+    color:#761ed6;
+    text-decoration: none;
+}
+section.side-nav .section__inner{
+    max-width:none;
+    margin:0 auto
+}
+section.side-nav ul.side-nav{
+    list-style:none;
+    vertical-align:top;
+    margin:0;
+    padding:0
+}
+section.side-nav li{
+    margin:0;
+    vertical-align:top;
+    border:2px solid #761ed6;
+    overflow:auto;
+    border-left:0;
+    border-right:0
+}
+section.side-nav li.separator{
+    position:relative;
+    display:block;
+    text-align:center;
+    height:52px;
+    overflow:visible
+}
+section.side-nav li.separator .separator__inner{
+    position:relative;
+    display:block;
+    height:50px;
+    padding:15px 0;
+    width:100%;
+    background-color:#fee4dd;
+    background-image:url(/images/pattern-dots-tiny.svg);
+    background-repeat:repeat;
+    background-size:4px;
+    margin-top:-2px;
+    border-top:2px solid #761ed6
+}
+section.side-nav li:first-of-type,section.side-nav li:not(:first-of-type),section.barchart li:first-of-type{
+    border-top:0
+}
+section.side-nav li.separator span{
+    margin:0 5px;
+    vertical-align:middle
+}
+section.side-nav li div,section.barchart li,section.barchart li div{
+    vertical-align:top
+}
+@media only screen and (min-width:768px){
+    section.side-nav li.separator .separator__inner{
+        width:228px
+    }
+    section.side-nav li.separator span{
+        margin:0 7px
+    }
+    section.side-nav li .row:hover .chart-name,section.side-nav li .row:hover .chart-num{
+        background-image:url(/images/pattern-dots-tiny.svg);
+        background-size:4px
+    }
+}
+section.side-nav li.separator span:not(:nth-of-type(4)){
+    font-size:10px
+}
+section.side-nav li.separator.top{
+    z-index:100
+}
+section.side-nav li.separator.rest{
+    z-index:200
+}
+section.side-nav li:not(.separator){
+    cursor:pointer
+}
+section.side-nav li .row{
+    margin:0 auto;
+    display:-webkit-flexbox;
+    display:-ms-flexbox;
+    display:-moz-flex;
+    display:flex;
+    -moz-flex-direction:row;
+    -ms-flex-direction:row;
+    flex-direction:row;
+    -ms-flex-wrap:nowrap;
+    flex-wrap:nowrap
+}
+section.side-nav .chart-name,section.side-nav .chart-num{
+    display:inline-block;
+    height:70px;
+    line-height:42px;
+    background-color:#fee4dd;
+    font-weight: 600;
+    text-align: center;
+}
+section.side-nav .chart-num{
+    width:70px;
+    text-align:center;
+    padding:14px 0;
+    border-right:2px solid #761ed6;
+    -ms-flex:none;
+    flex:none
+}
+section.side-nav .chart-name{
+    position:absolute;
+    left:70px;
+    right:0;
+    padding:14px 0 14px 14px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+    -ms-flex:none;
+    flex:none
+}
+@media only screen and (min-width:768px){
+    section.side-nav .chart-name{
+        position:relative;
+        left:auto;
+        right:auto;
+        width:228px
+    }
+}
+
+section.side-nav li .row:hover,section.side-nav li.separator .separator__inner,section.filter div.options,section.filter div.value,section.filter div[data-close]{
+    text-shadow:0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd
+}
+
+/*--Logo--*/
+div.logo{
+    position:relative;
+    border-bottom:2px solid #761ed6;
+    height:230px;
+    background-image:url(/images/pattern-dots-dense.svg);
+    background-size:4px
+}
+div.logo a.by-bolster,div.logo h1{
+    position:absolute;
+    display:block;
+    font-size:0;
+    background-size:contain;
+    background-repeat:no-repeat
+}
+div.logo h1{
+    top:25px;
+    left:25px;
+    right:25px;
+    bottom:25px;
+    background-image:url(/fivekill_logo.svg);
+    background-position:center;
+    background-color: rgba(256,256,256,0.5);
+    border-radius: 350px;
+}
+div.logo a.by-bolster{
+    top:188px;
+    left:48%;
+    background-image:url(/images/by-bolster.svg);
+    background-position:bottom right;
+    width:80px;
+    height:15px;
+    z-index:2000
+}
+/*----options ----*/
+section.options{
+    position:fixed;
+    right:2px;
+    left:2px;
+    bottom:0;
+    width:100%;
+    height:94px;
+    padding:0;
+    border-top:2px solid #761ed6;
+    border-right:2px solid #761ed6;
+    border-bottom:2px solid #761ed6;
+    box-sizing:border-box;
+    background-image:url(/images/pattern-dots-tiny.svg);
+    background-repeat:repeat;
+    background-size:4px
+}
