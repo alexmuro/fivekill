@@ -10,8 +10,8 @@ export default function Template({
   const { markdownRemark: post } = data; // data.markdownRemark holds our post data
   return (
     <section className='content'>
-      <Screen title={post.frontmatter.title} subtitle={` by ${post.frontmatter.band}`}>
-        <Helmet title={`${post.frontmatter.title} - Fivekill`} />
+      <Screen title={post.frontmatter.name}>
+        <Helmet title={`${post.frontmatter.name} - Fivekill Records`} />
         <div className="blog-post">
           <div
             className="blog-post-content"
@@ -24,14 +24,19 @@ export default function Template({
 }
 
 export const pageQuery = graphql`
-  query ReleaseByPath($path: String!) {
+  query ArtistByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         path
-        band
+        name
         title
+        website
+        facebook
+        twitter
+        press_landscape
+        press_sq
       }
     }
   }

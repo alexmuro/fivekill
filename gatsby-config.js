@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Fivekill Records',
   },
   plugins: [
   	'gatsby-plugin-react-helmet',
@@ -9,6 +9,13 @@ module.exports = {
       options: {
         path: `${__dirname}/src/releases`,
         name: 'releases',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/artists`,
+        name: 'artists',
       },
     },
     {
