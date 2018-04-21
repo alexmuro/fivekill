@@ -18,6 +18,10 @@ const TemplateWrapper = ({ children }) => (
     />
     <Sidebar />
     {children()}
+    <div className="border border__top"></div>
+    <div className="border border__left"></div>
+    <div className="border border__right"></div>
+    <div className="border border__bottom"></div>
   </div>
 )
 

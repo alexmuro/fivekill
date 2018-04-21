@@ -1,0 +1,39 @@
+.releaseList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;;
+  grid-gap: 10px;
+}
+.release__link {
+  text-decoration: none;
+  color: #761ed6;
+}
+
+.release__title {
+  font-size: .8em;
+}
+.release__artist {
+  font-size: .8em;
+}
+.release__date {
+  font-size: .7em;
+}
+
+@media only screen and (max-width: 900px) {
+  .releaseList {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+}
+
+@media only screen and (max-width: 500px) {
+  .releaseList {
+    grid-template-columns: 1fr;
+  }
+  
+}
+
+.album {
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}

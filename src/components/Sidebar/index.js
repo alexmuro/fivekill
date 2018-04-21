@@ -7,15 +7,32 @@ const Header = () => (
     <section className="options">
        <div className="section__inner">
           <label for="option-radio-12h">
-            <span>12 <small>HRS</small></span>
+            <span><small>BANDS</small></span>
             <input id="option-radio-12h"
              name="option-radio"
              type="radio"
+             selected
              data-option
              data-option-period="12h" />
           </label>
           <label for="option-radio-1d">
-            <span>24 <small>HRS</small></span>
+            <span><small>RECS</small></span>
+            <input id="option-radio-1d"
+             name="option-radio"
+             type="radio"
+             data-option
+             data-option-period="1d" />
+          </label>
+          <label for="option-radio-1d">
+            <span><small>NEWS</small></span>
+            <input id="option-radio-1d"
+             name="option-radio"
+             type="radio"
+             data-option
+             data-option-period="1d" />
+          </label>
+          <label for="option-radio-1d">
+            <span><small>ABT</small></span>
             <input id="option-radio-1d"
              name="option-radio"
              type="radio"

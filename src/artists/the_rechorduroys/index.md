@@ -7,7 +7,7 @@ facebook: ""
 twitter: ""
 press_landscape: ""
 press_sq: ""
-
+type: "artist"
 ---
 
 Is a band that plays the songs 4.

@@ -8,13 +8,40 @@ const path = require("path");
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
-  const ReleaseTemplate = path.resolve(`src/templates/release.js`);
+  // const ReleaseTemplate =
+  const Templates = {
+  	 'release': path.resolve(`src/templates/release.js`),
+  	 'artist' : path.resolve(`src/templates/artist.js`)
+  }
   return graphql(`
   	{
-	    allMarkdownRemark(
-	      sort: { order: DESC, fields: [frontmatter___date] }
-	      limit: 1000
-	    ) {
+	    release: allMarkdownRemark(
+	    	sort: { order: DESC, fields: [frontmatter___date]},
+	    	filter: {fileAbsolutePath: {regex: "/src/releases/.*\.md$/"}}
+	  	)
+	  	{
+	      edges {
+	        node {
+	          excerpt(pruneLength: 250)
+	          html
+	          id
+	          frontmatter {
+		        title
+		        date(formatString: "MMMM DD, YYYY")
+		        path
+		        artist
+		        releaseNumber
+		        bandcamp
+		        spotify
+		      }
+	        }
+	      }
+	    }
+	    artist: allMarkdownRemark(
+	    	sort: { order: DESC, fields: [frontmatter___date]},
+	    	filter: {fileAbsolutePath: {regex: "/src/artists/.*\.md$/"}}
+	  	)
+	  	{
 	      edges {
 	        node {
 	          excerpt(pruneLength: 250)
@@ -22,9 +49,10 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 	          id
 	          frontmatter {
 	            date
-	            band
+	            artist
 	            path
 	            title
+	            type
 	          }
 	        }
 	      }
@@ -35,14 +63,22 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 	  if (result.errors) {
 	    return Promise.reject(result.errors);
 	  }
-	  result.data.allMarkdownRemark.edges
+
+	  Object.keys(result.data).forEach(type => {
+	  	result.data[type]
+  		.edges
 	    .forEach(({ node }) => {
+	    	console.log(node.frontmatter)
 	      createPage({
 	        path: node.frontmatter.path,
-	        component: ReleaseTemplate,
+	        component: Templates[type],
 	        context: {} // additional data can be passed via context
 	      });
 	    });
+
+
+	  })
+	  	
 	})
 };
 

@@ -82,15 +82,18 @@
     }
 }
 .screen__inner{
-    position:relative;
-    width:90%;
+    position:fixed;
+    top: 30px;
+    left: 10px;
+    width:93%;
     padding:0;
 
     background-color:#fee4dd;
     color:#761ed6;
     border:2px solid #761ed6;
     text-align:center;
-    z-index:0;
+    height:calc(100vh - 80px);
+    z-index:9999;
 }
 @media only screen and (min-width:1060px){
     .screen__inner{
@@ -102,7 +105,11 @@
 
 @media only screen and (min-width:768px){
     .screen__inner{
-        height:calc(100vh - 20px)
+        position:relative;
+        top: 0px;
+        left: 0px;
+        height:calc(100vh - 22px);
+        
     }
     .screen__scrollarea{
         top:80px
@@ -132,9 +139,8 @@
 }
 .screen__title{
     border-bottom:2px solid #761ed6;
-    margin-right:60px;
     border-right:2px solid #761ed6;
-    height:60px;
+    height:80px;
     padding-left:20px
 }
 @media only screen and (min-width:768px){
@@ -144,7 +150,7 @@
     }
     .screen__title{
         margin-right:80px;
-        height:80px
+        
     }
 }
 .screen__title h3{
@@ -152,9 +158,14 @@
     color:#761ed6;
     line-height:60px;
     text-align:left;
-    font-size:15px;
-    font-weight:500
+    font-size: 1.3em;
+    font-weight:700
 }
+
+.screen__title h3 small{
+    font-weight: 300;
+}
+
 .screen__scrollarea{
     padding:0
 }
@@ -194,7 +205,7 @@
                                               transparent 75%,
                                               transparent)
 }
-.screen__scrollarea,.modal#welcome .modal__bg{
+.screen__scrollarea,.screen#welcome .screen__bg{
     background-image:url(/images/pattern-dots-tiny.svg);
     background-size:4px
 }
@@ -495,12 +506,13 @@
     left:12px;
     bottom:8px
 }
+
 .screen__title a.artist-social{
     font-size:0;
     text-decoration:none;
     animation:all .2s ease-in-out;
     border-bottom:0;
-    margin-right:10px;
+    margin-right:5px;
     width:26px;
     height:30px;
     display:inline-block;
@@ -512,6 +524,7 @@
         left:auto;
         right:10px;
         top:50%;
+        margin-right:10px;
         bottom:auto;
         -ms-transform:translateY(-50%);
         transform:translateY(-50%)
@@ -524,6 +537,9 @@
 .screen__title a.artist-social:last-of-type{
     margin-right:0
 }
+
+
+
 .screen__title a.artist-social:before{
     top:50%;
     left:50%;
@@ -533,6 +549,29 @@
     -ms-transform:translateY(-50%) translateX(-50%) scale(.8);
     transform:translateY(-50%) translateX(-50%) scale(.8)
 }
+
+.screen__footer .track-link:before,
+.screen__footer .track-link:hover:before,
+a.facebook:before,
+a.instagram:before,
+a.spotify:before,
+a.twitter:before,
+a.play:before,
+a.youtube:before,
+a.amazon:before,
+a.bandcamp:before,
+a.itunes:before,
+.screen__body .mc-field-group input[type=submit]{
+    content:" ";
+    vertical-align:middle;
+    display:inline-block;
+    background-repeat:no-repeat;
+    /*background-image:url(/images/sprites.png);*/
+    background-image:url(/images/sprites_new2.svg),none;
+    background-size:90px 70px
+}
+
+
 .screen__body{
     padding-bottom:70px
 }
@@ -550,113 +589,7 @@
         padding:40px
     }
 }
-.screen__body a.details__post{
-    text-align:left;
-    display:block;
-    padding-left:40px;
-    position:relative;
-    border:2px solid #761ed6;
-    margin-bottom:20px;
-    text-decoration:none;
-    background-color:#fee4dd
-}
-.screen__body a.details__post:last-of-type{
-    margin-bottom:0
-}
-.screen__body a.details__post:hover{
-    text-decoration:none
-}
-.screen__body a.details__post:before{
-    content:'';
-    position:absolute;
-    top:0;
-    left:0;
-    bottom:0;
-    width:40px;
-    display:block;
-    border-right:2px solid #761ed6
-}
-.screen__body a.details__post.type__facebook:before{
-    background-color:#fee4dd;
-    background-image:url(/images/pattern-fb.svg);
-    background-position:-5px -5px
-}
-.screen__body a.details__post.type__twitter:before{
-    background-color:#fee4dd;
-    background-image:url(/images/pattern-tw.svg);
-    background-position:-5px -5px
-}
-.screen__body a.details__post span.post__author{
-    position:relative;
-    padding:10px 10px 10px 45px;
-    display:block;
-    vertical-align:middle;
-    color:#761ed6;
-    height:50px;
-    line-height:18px;
-    font-size:14px;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    white-space:nowrap
-}
-@media only screen and (min-width:768px){
-    .screen__body a.details__post span.post__author{
-        font-size:16px;
-        padding:10px;
-        height:auto;
-        line-height:32px
-    }
-}
-.screen__body a.details__post span.post__author .post__thumbnail{
-    position:absolute;
-    top:10px;
-    left:10px;
-    display:inline-block;
-    width:30px;
-    height:30px;
-    vertical-align:middle;
-    margin-right:10px;
-    border:2px solid #761ed6
-}
-@media only screen and (min-width:768px){
-    .screen__body a.details__post span.post__author .post__thumbnail{
-        position:relative;
-        top:auto;
-        left:auto
-    }
-}
-.screen__body a.details__post span.post__author .post__time{
-    text-align:right;
-    display:block;
-    position:absolute;
-    top:24px;
-    left:45px;
-    font-size:10px;
-    font-weight:500
-}
-.screen__body a.details__post span.post__message{
-    overflow-wrap:break-word;
-    display:block;
-    color:#761ed6;
-    text-decoration:none;
-    font-weight:400;
-    font-size:14px;
-    padding:10px;
-    -moz-filter:grayscale(100%) sepia(100%) saturate(8000) hue-rotate(270deg);
-    filter:grayscale(100%) sepia(100%) saturate(8000) hue-rotate(270deg);
-    opacity:.8
-}
-@media only screen and (min-width:768px){
-    .screen__body a.details__post span.post__author .post__time{
-        top:10px;
-        left:auto;
-        right:15px;
-        font-size:14px
-    }
-    .screen__body a.details__post span.post__message{
-        font-size:16px
-    }
-}
+
 .screen__footer{
     position:absolute;
     bottom:0;
@@ -1045,17 +978,54 @@
     background-position:0 0
 }
 .screen__title a.facebook:before{
-    background-position:-30px 0;
+    background-position:-20px -5px;
     width:20px;
     height:20px
 }
 .screen__title a.instagram:before{
-    background-position:0 -30px;
+    background-position: 4px -30px;
     width:20px;
     height:20px
 }
+
+.screen__title a.twitter:before{
+    background-position:-14px -45px;
+    width:20px;
+    height:20px
+}
+
+.screen__title a.play:before{
+    background-position:-70px -24px;
+    width:20px;
+    height:20px
+}
+
+.screen__title a.youtube:before{
+    background-position:-57px -3px;
+    width:20px;
+    height:20px
+}
+
+.screen__title a.bandcamp:before{
+    background-position:-32px -43px;
+    width:20px;
+    height:20px
+}
+
+.screen__title a.amazon:before{
+    background-position:-55px -43px;
+    width:19px;
+    height:19px
+}
+
+.screen__title a.itunes:before{
+    background-position:-75px -43px;
+    width:20px;
+    height:20px
+}
+
 .screen__footer .track-link:hover:before,.screen__title a.spotify:before{
-    background-position:-50px -20px;
+    background-position:-40px -22px;
     width:20px;
     height:20px
 }
@@ -1064,8 +1034,8 @@
     width:20px;
     height:20px
 }
-.screen__title a.twitter:before{
-    background-position:-20px -50px;
-    width:20px;
-    height:20px
+
+
+.album-release-content{
+    text-align: justify;
 }

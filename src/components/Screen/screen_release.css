@@ -1,0 +1,75 @@
+
+.screen__body .details__release{
+    text-align:left;
+    display: grid;
+    grid-template-columns: 1fr;
+    position:relative;
+    border:2px solid #761ed6;
+    margin-bottom:20px;
+    text-decoration:none;
+    background-color:#fee4dd;
+}
+
+.screen__body .details__release:last-of-type{
+    margin-bottom:0
+}
+
+.screen__body .details__release:hover{
+    text-decoration:none
+}
+
+.img__release {
+   border-right: 1px solid blue;
+}
+
+
+.screen__body .details__release span.post__author{
+    position:relative;
+    padding:10px 10px 10px 45px;
+    display:block;
+    vertical-align:middle;
+    color:#761ed6;
+    height:50px;
+    line-height:18px;
+    font-size:14px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+
+
+
+.title_artist__release {
+    width: 100%;
+    padding: 10px;
+}
+.artist__release{
+    font-size: 1.5em;
+    font-weight: 000;
+}
+.title__release {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.releaseNumber__release {
+    padding-left: 10px;
+    font-weight: 700;
+    margin-top: -10px;
+}
+
+.date__release{
+    padding: 10px;
+}
+
+.post__message{
+    padding: 10px;
+}
+
+
+@media only screen and (min-width:768px){
+    .screen__body .details__release{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+

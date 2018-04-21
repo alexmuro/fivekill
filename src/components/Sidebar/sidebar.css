@@ -152,7 +152,7 @@ section.side-nav li .row:hover,section.side-nav li.separator .separator__inner,s
 div.logo{
     position:relative;
     border-bottom:2px solid #761ed6;
-    height:230px;
+    height:100px;
     background-image:url(/images/pattern-dots-dense.svg);
     background-size:4px
 }
@@ -173,23 +173,16 @@ div.logo h1{
     background-color: rgba(256,256,256,0.5);
     border-radius: 350px;
 }
-div.logo a.by-bolster{
-    top:188px;
-    left:48%;
-    background-image:url(/images/by-bolster.svg);
-    background-position:bottom right;
-    width:80px;
-    height:15px;
-    z-index:2000
-}
-/*----options ----*/
+
+
+/*----Mobile NAV ----*/
 section.options{
     position:fixed;
     right:2px;
     left:2px;
     bottom:0;
     width:100%;
-    height:94px;
+    height:64px;
     padding:0;
     border-top:2px solid #761ed6;
     border-right:2px solid #761ed6;
@@ -199,3 +192,171 @@ section.options{
     background-repeat:repeat;
     background-size:4px
 }
+
+@media only screen and (min-width:768px){
+    div.logo{
+        height:230px;
+        background-size:4px
+    }
+
+    section.options .section__inner{
+        display: none;
+    }
+}
+
+.floater{
+    position:fixed;
+    display:none;
+    text-align:center;
+    font-weight:500;
+    border:2px solid #761ed6;
+    padding:30px 30px 30px 116px;
+    font-size:20px;
+    pointer-events:none
+}
+section.options label span,section.options label span small{
+    font-size:12px;
+    pointer-events:none
+}
+.floater span.number{
+    border-right:2px solid #761ed6;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    font-weight:500;
+    width:86px;
+    line-height:86px;
+    vertical-align:middle
+}
+
+@media only screen and (min-width:768px){
+    section.options{
+        right:auto;
+        top:2px;
+        bottom:2px;
+        height:auto;
+        width:60px;
+        border-top:0;
+        border-bottom:0
+    }
+}
+section.options .section__inner{
+    width:100%;
+    margin:0;
+    text-align:center
+}
+@media only screen and (min-width:768px){
+    section.options .section__inner{
+        position:absolute;
+        top:50%;
+        -ms-transform:translateY(-50%);
+        transform:translateY(-50%);
+        width:60px
+    }
+}
+section.options label{
+    position:relative;
+    z-index:20;
+    display:inline-block;
+    width:60px;
+    text-align:center;
+    font-weight:700;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+@media only screen and (min-width:768px){
+    section.options label{
+        width:100%;
+        height:82.5px;
+        display:block
+    }
+}
+section.options label input{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    visibility:hidden
+}
+section.options label span{
+    text-shadow:0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd;
+    display:inline-block;
+    width:33px;
+    padding-top:18px;
+    padding-bottom:18px;
+    line-height:13px;
+    font-weight:500
+}
+
+section.options .handle{
+    transition:top .3s cubic-bezier(.53,.03,.21,.96),transform .3s cubic-bezier(.53,.03,.21,.96);
+    position:absolute;
+    top:5px;
+    left:51%;
+    width:52px;
+    height:52px;
+    background-color:#fee4dd;
+    border:2px solid #761ed6;
+    border-radius:100%;
+    z-index:10;
+    -ms-transform:translateX(-116px);
+    transform:translateX(-116px)
+}
+
+@media only screen and (min-width:768px){
+    section.options label span{
+        padding-bottom:0
+    }
+    section.options .handle{
+        top:10px;
+        left:9px;
+        -ms-transform:none;
+        transform:none;
+        width:42px;
+        height:42px
+    }
+    section.options[data-active-option="6h"] .handle{
+        top:10px
+    }
+}
+@media only screen and (max-width:767px){
+    section.options[data-active-option="6h"] .handle{
+        -ms-transform:translateX(-146px);
+        transform:translateX(-146px)
+    }
+    section.options[data-active-option="12h"] .handle{
+        -ms-transform:translateX(-116px);
+        transform:translateX(-116px)
+    }
+    section.options[data-active-option="1d"] .handle{
+        -ms-transform:translateX(-56px);
+        transform:translateX(-56px)
+    }
+    section.options[data-active-option="2d"] .handle{
+        -ms-transform:translateX(4px);
+        transform:translateX(4px)
+    }
+    section.options[data-active-option="7d"] .handle{
+        -ms-transform:trans-lateX(64px);
+        transform:translateX(64px)
+    }
+}
+@media only screen and (min-width:768px){
+    section.options[data-active-option="12h"] .handle{
+        top:10px
+    }
+    section.options[data-active-option="1d"] .handle{
+        top:93px
+    }
+    section.options[data-active-option="2d"] .handle{
+        top:175px
+    }
+    section.options[data-active-option="7d"] .handle{
+        top:259px
+    }
+}
+
+
