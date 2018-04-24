@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 const Header = () => (
   <div className="share__wrapper">
     <a className="info" data-welcome-open>
-      Info
+      Mailing List
     </a>
     <aside className="object__share" data-object-share>
       <h4>Share</h4>
