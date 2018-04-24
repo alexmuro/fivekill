@@ -12,7 +12,7 @@ itunes: ''
 googleplay: ''
 amazon: ''
 releaseType: LP
-releaseNumber: 5k001
+releaseNumber: 5K001
 ---
 
 
