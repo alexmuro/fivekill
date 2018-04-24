@@ -7,10 +7,10 @@ artist: The Parlor
 band-id: the_parlor
 spotify: 'https://open.spotify.com/album/5v6WrfZzDyzV3OFfmdpAoi'
 bandcamp: 'https://theparlor.bandcamp.com/album/kiku'
-soundcloud: '#'
-itunes: '#'
-googleplay: '#'
-amazon: '#'
+soundcloud: ''
+itunes: ''
+googleplay: ''
+amazon: ''
 releaseType: LP
 releaseNumber: 5k001
 ---
