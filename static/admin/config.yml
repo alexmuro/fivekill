@@ -3,6 +3,7 @@ backend:
   repo: alexmuro/fivekill
 
 media_folder: static/assets
+publish_mode: editorial_workflow
 
 collections:
   - name: news
@@ -14,4 +15,24 @@ collections:
       - {label: "Path", name: "path", widget: "string", default: "/news/"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "coverImage", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: artists
+    label: artists
+    folder: content/artists
+    create: true
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "name", widget: "string"}
+      - {label: "Path", name: "path", widget: "string", default: "/artists/"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Press Photo", name: "coverImage", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: releases
+    label: releases
+    folder: content/releases
+    create: true
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "name", widget: "string"}
+      - {label: "Path", name: "path", widget: "string", default: "/artists/"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Album Cover", name: "coverImage", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}

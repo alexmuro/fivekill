@@ -12,13 +12,12 @@ const dateOptions = {
 
 function NewsListing(props) {
 	const news = props.news
-	console.log('newsListing HERE', news)
 	let image = news.frontmatter.coverImage
 		? <Img sizes={news.frontmatter.coverImage.childImageSharp.sizes} />
 	    : <span />
 
 	return (
-		<div className='article'>
+		<div className='article' key={news.id}>
 		   	<Link to={news.frontmatter.path} className="news__link" >
 	    		<div className='news_container'>
 	    			<div className='news_image'>
@@ -41,8 +40,6 @@ function NewsListing(props) {
 }
 
 export default function Index(props) {
-  console.log('news listing props', props.news)
-  //const { edges: releases } = data.allMarkdownRemark;
   let articles = props.news
     .filter(newsItem => {
     	console.log('filter', newsItem.node.frontmatter.title.length)
@@ -50,10 +47,9 @@ export default function Index(props) {
     })
     .map(newsItem => {
     	console.log('')
-    	return <NewsListing news={newsItem.node} />
+    	return <NewsListing key={newsItem.node.id} news={newsItem.node} />
     })
   
-  console.log('albums', articles)
   return (
 	  <section>
       	<h3 className='sectionHeader'>{props.title}</h3>

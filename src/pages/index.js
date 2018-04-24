@@ -59,16 +59,17 @@ export const pageQuery = graphql`
             artist
             releaseNumber
             coverImage {
-	          childImageSharp {
-	            resize(width: 300, height: 300) {
-	              src
-	            }
-	            sizes(maxWidth: 786) {
-	              ...GatsbyImageSharpSizes
-	            }
-	          }
-	        }
+	          	childImageSharp {
+	            	resize(width: 300, height: 300) {
+	              	src
+	            	}
+	            	sizes(maxWidth: 786) {
+	              	...GatsbyImageSharpSizes
+	            	}
+	          	}
+	        	}
           }
+          id
           excerpt
         }
       }
@@ -93,6 +94,7 @@ export const pageQuery = graphql`
 		          }
 		        }
           }
+          id
           excerpt(pruneLength: 500)
         }
       }

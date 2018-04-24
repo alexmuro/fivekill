@@ -17,7 +17,7 @@ function Album(props) {
 	    : <span />
 
 	return (
-		<div className='album'>
+		<div className='album' key={release.id}>
 		   	<Link to={release.frontmatter.path} className="release__link" >
 	    		<span>
 	    			{image}
@@ -37,13 +37,11 @@ function Album(props) {
 }
 
 export default function Index(props) {
-  console.log('props', props)
   //const { edges: releases } = data.allMarkdownRemark;
   let albums = props.releases
     .filter(release => release.frontmatter.title.length > 0)
-    .map(release => <Album release={release} />)
+    .map((release,index) => <Album key={release.id} release={release} />)
   
-  console.log('albums', albums)
   return (
 	  <section>
       	<h3 className='sectionHeader'>{props.title}</h3>

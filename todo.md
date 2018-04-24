@@ -4,7 +4,7 @@ X - Create Artists Listing
 
 X - Create Artist Landing
 
-4 - Create News Data 
+x - Create News Data 
 
 x - Update gatsby-node using filter
 
@@ -14,4 +14,4 @@ x - Update gatsby-node using filter
 
 8 - Mobile Nav
 
-9 - Netlify Integration
+x - Netlify Integration

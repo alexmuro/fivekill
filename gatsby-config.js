@@ -5,6 +5,13 @@ module.exports = {
   plugins: [
   	'gatsby-plugin-react-helmet',
     `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static/assets`,
+        name: 'assets',
+      },
+    },
   	{
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -26,7 +33,7 @@ module.exports = {
         name: 'news',
       },
     },
-
+    
     {
       resolve: `gatsby-transformer-remark`,
       options: {
