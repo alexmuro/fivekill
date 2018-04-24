@@ -1,5 +1,5 @@
 ---
-name: onlyness
+name: Onlyness
 path: /artists/onlyness
 date: '2018-04-24T12:55:02-04:00'
 pressPhoto: /static/assets/onlyness.jpg
