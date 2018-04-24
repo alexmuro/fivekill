@@ -9,10 +9,10 @@ import './index.scss'
 const TemplateWrapper = ({ children }) => (
   <div >
     <Helmet
-      title="Gatsby Default Starter"
+      title="Five Kill Records"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'A not-for-profit independent record label from New York\'s capital region.' },
+        { name: 'keywords', content: 'records, five kill, fivekill, bear grass, b3nson, swordpaw, collar city, bee side cassettes, rev records, independent, the parlor, rechorduroys' },
       ]}
     />
     <Sidebar />
