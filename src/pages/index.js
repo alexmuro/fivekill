@@ -6,7 +6,6 @@ import NewsList from '../components/NewsList'
 
 const NOW = new Date()
 const IndexPage = ({data}) => {
-	console.log('index data', data)
 	const { edges: releases } = data.releases;
 	const { edges: news } = data.news;
 	let futureReleases = releases
@@ -22,17 +21,17 @@ const IndexPage = ({data}) => {
 			return release.frontmatter.date < NOW
 		})
 
-	console.log('news', news)
 	return (
 	  <section className='content'>
-	  	<ReleaseList 
-	  		title='UPCOMING RELEASES'
-	  		releases={futureReleases}
-	  	/>
 	  	<ReleaseList 
 	  		title='LATEST RELEASES'
 	  		releases={recentReleases}
 	  	/>
+	  	<ReleaseList 
+	  		title='UPCOMING RELEASES'
+	  		releases={futureReleases}
+	  	/>
+	  	
 	  	<NewsList
 	  		title='NEWS'
 	  		news={news}
@@ -67,7 +66,7 @@ export const pageQuery = graphql`
 	              	...GatsbyImageSharpSizes
 	            	}
 	          	}
-	        	}
+	        }
           }
           id
           excerpt
@@ -99,7 +98,6 @@ export const pageQuery = graphql`
         }
       }
     }
-
   }
 `;
 
