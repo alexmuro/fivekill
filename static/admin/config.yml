@@ -3,7 +3,7 @@ backend:
   repo: alexmuro/fivekill
 
 media_folder: static/assets
-publish_mode: editorial_workflow
+
 
 collections:
   - name: news
@@ -26,13 +26,13 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Press Photo", name: "pressPhoto", widget: "image"}
       - {label: "artistId", name: "band-id", widget: "string"}
-      - {label: "website", name: "website", widget: "string"}
-      - {label: "spotify", name: "spotify", widget: "string"}
-      - {label: "bandcamp", name: "bandcamp", widget: "string"}
-      - {label: "facebook", name: "facebook", widget: "string"}
-      - {label: "instagram", name: "instagram", widget: "string"}
-      - {label: "booking", name: "booking", widget: "string"}
-      - {label: "press", name: "press", widget: "string"}
+      - {label: "website", name: "website", widget: "string", required: false}
+      - {label: "spotify", name: "spotify", widget: "string", required: false}
+      - {label: "bandcamp", name: "bandcamp", widget: "string", required: false}
+      - {label: "facebook", name: "facebook", widget: "string", required: false}
+      - {label: "instagram", name: "instagram", widget: "string", required: false}
+      - {label: "booking", name: "booking", widget: "string", required: false}
+      - {label: "press", name: "press", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
       
   - name: releases
@@ -46,12 +46,12 @@ collections:
       - {label: "Release Title", name: "title", widget: "string"}
       - {label: "artist", name: "artist", widget: "string"}
       - {label: "band-id", name: "band-id", widget: "string"}
-      - {label: "spotify", name: "spotify", widget: "string"}
-      - {label: "bandcamp", name: "bandcamp", widget: "string"}
-      - {label: "soundcloud", name: "soundcloud", widget: "string"}
-      - {label: "itunes", name: "itunes", widget: "string"}
-      - {label: "googleplay", name: "googleplay", widget: "string"}
-      - {label: "amazon", name: "amazon", widget: "string"}
+      - {label: "spotify", name: "spotify", widget: "string", required: false}
+      - {label: "bandcamp", name: "bandcamp", widget: "string", required: false}
+      - {label: "soundcloud", name: "soundcloud", widget: "string", required: false}
+      - {label: "itunes", name: "itunes", widget: "string", required: false}
+      - {label: "googleplay", name: "googleplay", widget: "string", required: false}
+      - {label: "amazon", name: "amazon", widget: "string", required: false}
       - {label: "releaseType", name: "releaseType", widget: "string"}
       - {label: "releaseNumber", name: "releaseNumber", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
