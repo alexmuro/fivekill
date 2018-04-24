@@ -1,8 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Helmet from "react-helmet"
 import Screen from '../components/Screen'
 import ReleaseList from '../components/ReleaseList'
 import NewsList from '../components/NewsList'
+import Share from '../components/Share'
+
 
 const NOW = new Date()
 const IndexPage = ({data}) => {
@@ -23,6 +26,9 @@ const IndexPage = ({data}) => {
 
 	return (
 	  <section className='content'>
+	  	<Helmet title={`Home - Fivekill`} />
+	  	<Share />
+	  	
 	  	<ReleaseList 
 	  		title='LATEST RELEASES'
 	  		releases={recentReleases}

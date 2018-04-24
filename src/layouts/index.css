@@ -1939,24 +1939,14 @@ body.break-one section.artists li.separator.top .separator__inner,body.break-two
 }
 
 
-section.types .share__wrapper a.info:before,section.types .share__wrapper aside h4:before{
+section.content .share__wrapper a.info:before,section.content .share__wrapper aside h4:before{
     content:'';
     background-size:contain;
     background-repeat:no-repeat
 }
 
-body.break-one section.types[data-active-type=bar]{
-    border-color:#761ed6;
-    background-color:#fee4dd
-}
-section.types{
-    display:none;
-    position:absolute;
-    top:2px;
-    left:360px;
-    right:2px;
-    height:48px
-}
+
+
 @media only screen and (min-width:768px){
     section.types{
         display:block
@@ -1965,14 +1955,7 @@ section.types{
 section.types .types__wrapper{
     width:259px
 }
-section.types[data-active-type=pie]{
-    position:fixed
-}
-section.types[data-active-type=bar]{
-    position:fixed;
-    border-bottom:2px solid transparent;
-    background-color:transparent
-}
+
 section.types label{
     -webkit-touch-callout:none;
     -webkit-user-select:none;
@@ -2014,11 +1997,11 @@ section.types label input{
     left:0;
     visibility:hidden
 }
-section.types .share__wrapper{
+section.content .share__wrapper{
     height:46px
 }
 @media only screen and (min-width:768px){
-    section.types .share__wrapper{
+    section.content .share__wrapper{
         width:170px;
         height:46px;
         text-align:center;
@@ -2027,7 +2010,7 @@ section.types .share__wrapper{
         right:0
     }
 }
-section.types .share__wrapper a.info{
+section.content .share__wrapper a.info{
     position:relative;
     display:inline-block;
     width:52px;
@@ -2042,13 +2025,13 @@ section.types .share__wrapper a.info{
     padding-left:25px
 }
 @media only screen and (min-width:768px){
-    section.types .share__wrapper a.info{
+    section.content .share__wrapper a.info{
         width:60px;
         height:46px;
         line-height:46px
     }
 }
-section.types .share__wrapper a.info:before{
+section.content .share__wrapper a.info:before{
     display:inline-block;
     width:20px;
     height:26px;
@@ -2062,13 +2045,13 @@ section.types .share__wrapper a.info:before{
     background-image:url(/images/icon-info.svg);
     background-position:center
 }
-section.types .share__wrapper aside{
+section.content .share__wrapper aside{
     position:relative;
     display:inline-block;
     width:100px;
     height:46px
 }
-section.types .share__wrapper aside h4{
+section.content .share__wrapper aside h4{
     top:50%;
     left:50%;
     -ms-transform:translate(-50%,-50%);
@@ -2086,7 +2069,7 @@ section.types .share__wrapper aside h4{
     padding-left:35px;
     line-height:40px
 }
-section.types .share__wrapper aside h4:before{
+section.content .share__wrapper aside h4:before{
     display:inline-block;
     width:30px;
     height:30px;
@@ -2100,7 +2083,7 @@ section.types .share__wrapper aside h4:before{
     background-image:url(/images/icon-share-hover.svg);
     background-position:center
 }
-section.types .share__wrapper aside .social-share{
+section.content .share__wrapper aside .social-share{
     transition:transform .1s cubic-bezier(.53,.03,.21,.96),opacity .1s cubic-bezier(.53,.03,.21,.96);
     top:50%;
     left:50%;
@@ -2110,15 +2093,15 @@ section.types .share__wrapper aside .social-share{
     width:78px;
     opacity:0
 }
-section.types .share__wrapper aside .social-share li,section.types .share__wrapper aside .social-share ul{
+section.content .share__wrapper aside .social-share li,section.content .share__wrapper aside .social-share ul{
     padding:0;
     margin:0;
     list-style:none
 }
-section.types .share__wrapper aside .social-share li span,section.types .share__wrapper aside .social-share ul span{
+section.content .share__wrapper aside .social-share li span,section.content .share__wrapper aside .social-share ul span{
     font-size:0
 }
-section.types .share__wrapper aside .social-share li{
+section.content .share__wrapper aside .social-share li{
     vertical-align:middle;
     position:relative;
     display:inline-block;
@@ -2128,10 +2111,10 @@ section.types .share__wrapper aside .social-share li{
     opacity:.5;
     box-sizing:content-box
 }
-section.types .share__wrapper aside .social-share li:hover{
+section.content .share__wrapper aside .social-share li:hover{
     opacity:1
 }
-section.types .share__wrapper aside .social-share li.facebook{
+section.content .share__wrapper aside .social-share li.facebook{
     margin-right:0;
     padding-right:3px;
     background-image:url(/images/icons-share-fb.svg);
@@ -2139,7 +2122,7 @@ section.types .share__wrapper aside .social-share li.facebook{
     background-size:28px 28px;
     background-position:center
 }
-section.types .share__wrapper aside .social-share li.twitter{
+section.content .share__wrapper aside .social-share li.twitter{
     margin-left:0;
     padding-left:3px;
     background-image:url(/images/icons-share-tw.svg);
@@ -2147,18 +2130,18 @@ section.types .share__wrapper aside .social-share li.twitter{
     background-size:28px 28px;
     background-position:center
 }
-section.types .share__wrapper aside .social-share li a{
+section.content .share__wrapper aside .social-share li a{
     position:absolute;
     top:0;
     left:0;
     right:0;
     bottom:0
 }
-section.types .share__wrapper aside:hover h4{
+section.content .share__wrapper aside:hover h4{
     top:0;
     opacity:0
 }
-section.types .share__wrapper aside:hover .social-share{
+section.content .share__wrapper aside:hover .social-share{
     -ms-transform:translate(-50%,-50%) scale(1);
     transform:translate(-50%,-50%) scale(1);
     opacity:1
