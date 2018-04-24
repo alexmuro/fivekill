@@ -1,55 +1,69 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Img from 'gatsby-image'
 import Screen from '../components/Screen'
+import '../components/Screen/screen_artist.css'
+
+
 
 export default function Index({ data }) {
-  const { edges: artists } = data.allMarkdownRemark;
+  const { edges: releases } = data.allMarkdownRemark;
+  
   return (
-	  <section className='content'>
+    <section className='content'>
       <Screen title={'Artists'} subtitle={' on fivekill'}>
-	      {artists
-	        .filter(post => post.node.frontmatter.name)
-	        .map(({ node: post }) => {
-	          return (
-	           	<Link to={post.frontmatter.path} className="details__post type__facebook" >
-		        		<span className="post__author">
-		        			<img className="post__thumbnail processed" src="" />
-		        			<h4>{post.frontmatter.name}</h4>{post.frontmatter.band}
-		        			<span className="post__time">{post.frontmatter.date}</span>
-		        		</span>
-		        		<span className="post__message">
-		        			{post.excerpt}
-		        		</span>
-        		</Link>
-	          );
-        	})
-	      }
+        <section className='artistContainer'>
+          {releases
+            .filter(post => post.node.frontmatter.name.length > 0)
+            .map(({ node: post }) => {
+              let image = post.frontmatter.pressPhoto
+                ? <Img className=" processed" sizes={post.frontmatter.pressPhoto.childImageSharp.sizes} />
+                : <img className="artist__thumbnail processed" src="" />
+              return (
+                <Link to={post.frontmatter.path} className="details__artist" >
+                  <div className='img__artist'> 
+                    {image}
+                  </div>
+                  <div className='content__artist'>
+                    
+                      <span className='title__artist'>{post.frontmatter.name}</span> 
+                    
+                  </div>
+                  
+                </Link>
+              );
+            })
+          }
+        </section>
       </Screen>
-	  </section>
-	)
+    </section>
+  )
 }
 
 export const pageQuery = graphql`
-  query ArtistQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+  query ArtisteQuery {
+    allMarkdownRemark(
+        sort: { order: ASC, fields: [frontmatter___name]},
+        filter: {fileAbsolutePath: {regex : "\/artists/"} }
+      ) {
       edges {
         node {
-          excerpt(pruneLength: 250)
           id
           frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
+            name
             path
-	        name
-	        title
-	        website
-	        facebook
-	        twitter
-	        press_landscape
-	        press_sq
+            pressPhoto{
+            	childImageSharp {
+              	resize(width: 800, height: 600) {
+                	src
+              }
+              sizes(maxWidth: 800, maxHeight:600, cropFocus:CENTER) {
+                ...GatsbyImageSharpSizes
+              }
+            }
           }
         }
       }
     }
   }
-`;
+}`;

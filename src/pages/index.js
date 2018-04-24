@@ -2,11 +2,13 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Screen from '../components/Screen'
 import ReleaseList from '../components/ReleaseList'
+import NewsList from '../components/NewsList'
 
 const NOW = new Date()
 const IndexPage = ({data}) => {
 	console.log('index data', data)
 	const { edges: releases } = data.releases;
+	const { edges: news } = data.news;
 	let futureReleases = releases
 		.map(makeDate)
 		.filter(release => {
@@ -20,6 +22,7 @@ const IndexPage = ({data}) => {
 			return release.frontmatter.date < NOW
 		})
 
+	console.log('news', news)
 	return (
 	  <section className='content'>
 	  	<ReleaseList 
@@ -30,16 +33,18 @@ const IndexPage = ({data}) => {
 	  		title='LATEST RELEASES'
 	  		releases={recentReleases}
 	  	/>
-	    <h1 className='nav-link' style={{paddingTop: '25%', color: '#761ed6'}}>
-	      COMING SOON...
-	    </h1>
+	  	<NewsList
+	  		title='NEWS'
+	  		news={news}
+	  	/>
+	  	
 	  </section>
 	)
 }
 export default IndexPage
 
 export const pageQuery = graphql`
-  query NewReleases {
+  query IndexQuery {
     releases: allMarkdownRemark(
       filter: { fileAbsolutePath: {regex : "\/releases/"} },
       sort: {fields: [frontmatter___date], order: DESC},
@@ -68,6 +73,31 @@ export const pageQuery = graphql`
         }
       }
     }
+    news: allMarkdownRemark(
+      filter: { fileAbsolutePath: {regex : "\/news/"} },
+      sort: {fields: [frontmatter___date], order: DESC},
+    ) {
+      totalCount
+      edges {
+        node {
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+            path
+            coverImage {
+		          childImageSharp {
+		            
+		            sizes(maxWidth: 786,maxHeight: 786) {
+		              ...GatsbyImageSharpSizes
+		            }
+		          }
+		        }
+          }
+          excerpt(pruneLength: 500)
+        }
+      }
+    }
+
   }
 `;
 

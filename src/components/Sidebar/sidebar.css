@@ -164,13 +164,13 @@ div.logo a.by-bolster,div.logo h1{
     background-repeat:no-repeat
 }
 div.logo h1{
-    top:25px;
-    left:25px;
-    right:25px;
-    bottom:25px;
-    background-image:url(/fivekill_logo.svg);
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    background-image:url(/5k_logo.svg);
     background-position:center;
-    background-color: rgba(256,256,256,0.5);
+    
     border-radius: 350px;
 }
 

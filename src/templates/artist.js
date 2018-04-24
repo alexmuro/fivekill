@@ -1,22 +1,52 @@
 import React from "react";
 import Helmet from "react-helmet";
+import Img from 'gatsby-image'
 import Screen from '../components/Screen'
-
+const stores = ['spotify','bandcamp','youtube','itunes','play']
 // import '../css/blog-post.css'; // make it pretty!
 
-export default function Template({
-  data, // this prop will be injected by the GraphQL query we'll write in a bit
+export default function ArtistTemplate({
+  data // this prop will be injected by the GraphQL query we'll write in a bit
 }) {
   const { markdownRemark: post } = data; // data.markdownRemark holds our post data
+    console.log('artist data',data)
+    let image = post.frontmatter.pressPhoto
+              ? <Img className=" processed" sizes={post.frontmatter.pressPhoto.childImageSharp.sizes} />
+              : <img className="release__thumbnail processed" src="" />
+
+    let socials = {}
+
+    stores.forEach(key => {
+      if(post.frontmatter[key] && post.frontmatter[key].length > 0){
+        socials[key] = post.frontmatter[key]
+      }
+   })
+  
   return (
     <section className='content'>
-      <Screen title={post.frontmatter.name}>
-        <Helmet title={`${post.frontmatter.name} - Fivekill Records`} />
+      <Screen title={post.frontmatter.name} socials={socials}>
+        <Helmet title={`${post.frontmatter.name} - Fivekill`} />
+        <div className="details__artist" >
+          <div className='img__release'> 
+            {image}
+          </div>
+          <div className='content__release'>
+              <div className='artist__release'>Website: </div>
+              <div className='artist__release'>Bandcamp: </div>
+              <div className='artist__release'>Booking: </div>
+              <div className='artist__release'>Press: </div>
+            </div>
+          </div>
+        
         <div className="blog-post">
+          <h3 className='sectionHeader'>Artist Bio</h3>
           <div
-            className="blog-post-content"
+            className="album-release-content"
+            style={{textAlign:'justify'}}
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
+          <h3 className='sectionHeader'>Tour Dates</h3>
+          <h3 className='sectionHeader'>Releases</h3>
         </div>
       </Screen>
     </section>
@@ -28,15 +58,21 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        path
         name
-        title
+        path
         website
         facebook
         twitter
-        press_landscape
-        press_sq
+        pressPhoto {
+          childImageSharp {
+            resize(width: 800, height: 600) {
+              src
+            }
+            sizes(maxWidth: 800, maxHeight:600, cropFocus:CENTER) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
       }
     }
   }

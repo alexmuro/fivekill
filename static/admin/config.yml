@@ -1,0 +1,15 @@
+backend:
+  name: github
+  repo: alexmuro/fivekill
+
+media_folder: static/assets
+
+collections:
+  - name: news
+    label: news
+    folder: src/news
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }

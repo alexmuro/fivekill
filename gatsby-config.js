@@ -4,18 +4,26 @@ module.exports = {
   },
   plugins: [
   	'gatsby-plugin-react-helmet',
+    `gatsby-plugin-netlify-cms`,
   	{
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/releases`,
+        path: `${__dirname}/content/releases`,
         name: 'releases',
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/artists`,
+        path: `${__dirname}/content/artists`,
         name: 'artists',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/news`,
+        name: 'news',
       },
     },
 

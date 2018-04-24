@@ -6,7 +6,7 @@ const Header = () => (
   <div>
     <section className="options">
        <div className="section__inner">
-          <label for="option-radio-12h">
+          <label htmlFor="option-radio-12h">
             <span><small>BANDS</small></span>
             <input id="option-radio-12h"
              name="option-radio"
@@ -15,7 +15,7 @@ const Header = () => (
              data-option
              data-option-period="12h" />
           </label>
-          <label for="option-radio-1d">
+          <label htmlFor="option-radio-1d">
             <span><small>RECS</small></span>
             <input id="option-radio-1d"
              name="option-radio"
@@ -23,7 +23,7 @@ const Header = () => (
              data-option
              data-option-period="1d" />
           </label>
-          <label for="option-radio-1d">
+          <label htmlFor="option-radio-1d">
             <span><small>NEWS</small></span>
             <input id="option-radio-1d"
              name="option-radio"
@@ -31,7 +31,7 @@ const Header = () => (
              data-option
              data-option-period="1d" />
           </label>
-          <label for="option-radio-1d">
+          <label htmlFor="option-radio-1d">
             <span><small>ABT</small></span>
             <input id="option-radio-1d"
              name="option-radio"

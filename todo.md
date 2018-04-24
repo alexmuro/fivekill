@@ -1,12 +1,12 @@
-1 - Create Vendor links (spotify, bandcamp ...)
+x - Create Vendor links (spotify, bandcamp ...)
 
-2 - Create Artists Listing
+X - Create Artists Listing
 
-3 - Create Artist Landing
+X - Create Artist Landing
 
 4 - Create News Data 
 
-5 - Update gatsby-node using 
+x - Update gatsby-node using filter
 
 6 - Landing Page Header 
 

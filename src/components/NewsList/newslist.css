@@ -1,0 +1,101 @@
+.news_container{
+    text-align:left;
+    display: grid;
+    grid-template-columns: 1fr;
+    position:relative;
+    border-bottom:2px dashed #761ed6;
+    padding-bottom: 10px;
+    margin-bottom:20px;
+    text-decoration:none;
+    background-color:#fee4dd;
+}
+
+.news_excerpt {
+    padding: 10px;
+    text-align: justify;
+    padding-top: 0px;
+}
+.news__link{
+    text-decoration: none;
+    color: #761ed6;
+}
+
+.news__link:hover{
+    color: #761ed6;
+}
+
+.artileList {
+    padding: 20px;
+}
+
+.news__title{
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+@media only screen and (min-width:768px){
+    .news_container{
+        grid-template-columns: 200px 1fr;
+    }
+}
+
+
+.news_container:last-of-type{
+    margin-bottom:0;
+    border-bottom: none;
+}
+
+.screen__body .details__release:hover{
+    text-decoration:none
+}
+
+.img__release {
+   border-right: 1px solid blue;
+}
+
+
+.screen__body .details__release span.post__author{
+    position:relative;
+    padding:10px 10px 10px 45px;
+    display:block;
+    vertical-align:middle;
+    color:#761ed6;
+    height:50px;
+    line-height:18px;
+    font-size:14px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+
+
+
+.title_artist__release {
+    width: 100%;
+    padding: 10px;
+}
+.artist__release{
+    font-size: 1.5em;
+    font-weight: 000;
+}
+.title__release {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.releaseNumber__release {
+    padding-left: 10px;
+    font-weight: 700;
+    margin-top: -10px;
+}
+
+.date__release{
+    padding: 10px;
+}
+
+.post__message{
+    padding: 10px;
+}
+
+
+

@@ -45,7 +45,10 @@ export default function Index({ data }) {
 
 export const pageQuery = graphql`
   query ReleaseQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date]},
+        filter: {fileAbsolutePath: {regex : "\/releases/"} }
+      ) {
       edges {
         node {
           excerpt(pruneLength: 250)

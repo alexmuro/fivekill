@@ -11,13 +11,15 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   // const ReleaseTemplate =
   const Templates = {
   	 'release': path.resolve(`src/templates/release.js`),
-  	 'artist' : path.resolve(`src/templates/artist.js`)
+  	 'artist' : path.resolve(`src/templates/artist.js`),
+  	 'news' : path.resolve(`src/templates/news.js`)
   }
+
   return graphql(`
   	{
 	    release: allMarkdownRemark(
 	    	sort: { order: DESC, fields: [frontmatter___date]},
-	    	filter: {fileAbsolutePath: {regex: "/src/releases/.*\.md$/"}}
+	    	filter: {fileAbsolutePath: {regex : "\/releases/"} }
 	  	)
 	  	{
 	      edges {
@@ -38,8 +40,28 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 	      }
 	    }
 	    artist: allMarkdownRemark(
+	    	sort: { order: ASC, fields: [frontmatter___name]},
+	    	filter: {fileAbsolutePath: {regex : "\/artists/"} }
+	  	)
+	  	{
+	      edges {
+	        node {
+	          excerpt(pruneLength: 250)
+	          html
+	          id
+	          frontmatter {
+	            date
+	            name
+	            path
+	            title
+	            type
+	          }
+	        }
+	      }
+	    }
+	    news: allMarkdownRemark(
 	    	sort: { order: DESC, fields: [frontmatter___date]},
-	    	filter: {fileAbsolutePath: {regex: "/src/artists/.*\.md$/"}}
+	    	filter: {fileAbsolutePath: {regex : "\/news/"} }
 	  	)
 	  	{
 	      edges {
@@ -68,7 +90,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 	  	result.data[type]
   		.edges
 	    .forEach(({ node }) => {
-	    	console.log(node.frontmatter)
+	    	console.log(type,node.frontmatter)
 	      createPage({
 	        path: node.frontmatter.path,
 	        component: Templates[type],

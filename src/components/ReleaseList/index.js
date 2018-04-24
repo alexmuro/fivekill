@@ -42,6 +42,7 @@ export default function Index(props) {
   let albums = props.releases
     .filter(release => release.frontmatter.title.length > 0)
     .map(release => <Album release={release} />)
+  
   console.log('albums', albums)
   return (
 	  <section>
