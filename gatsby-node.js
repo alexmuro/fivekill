@@ -17,11 +17,7 @@ exports.onCreateNode = ({
   if (node.internal.type === 'MarkdownRemark') {
   	
     const slug = createFilePath({ node, getNode, basePath: 'content' });
-    createNodeField({
-      node,
-      name: 'slug',
-      value: slug,
-    });
+    
 
     // Attach thumbnail's ImageSharp node by public path if necessary
     if (typeof node.frontmatter.coverImage === 'string') {
@@ -48,7 +44,12 @@ exports.onCreateNode = ({
 		console.log('--------------------')
 
         // Add ImageSharp node as child
-        createParentChildLink({ parent: node, child: imageSharpNode });
+        createParentChildLink({ parent: node, child: imageSharpNode});
+        createNodeField({
+      		node,
+     	    name: `coverImage`,
+      		value: imageSharpNodeId
+    	})
       }
     }
   }
