@@ -2,7 +2,7 @@ backend:
   name: github
   repo: alexmuro/fivekill
 
-media_folder: static/assets
+media_folder: content/assets
 publish_mode: editorial_workflow
 
 collections:
@@ -24,15 +24,34 @@ collections:
       - {label: "Title", name: "name", widget: "string"}
       - {label: "Path", name: "path", widget: "string", default: "/artists/"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Press Photo", name: "coverImage", widget: "image"}
+      - {label: "Press Photo", name: "pressPhoto", widget: "image"}
+      - {label: "band-id", name: "band-id", widget: "string"}
+      - {label: "website", name: "website", widget: "string"}
+      - {label: "spotify", name: "spotify", widget: "string"}
+      - {label: "bandcamp", name: "bandcamp", widget: "string"}
+      - {label: "facebook", name: "facebook", widget: "string"}
+      - {label: "instagram", name: "instagram", widget: "string"}
+      - {label: "booking", name: "booking", widget: "string"}
+      - {label: "press", name: "press", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+      
   - name: releases
     label: releases
     folder: content/releases
     create: true
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "name", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Path", name: "path", widget: "string", default: "/artists/"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Street Date", name: "date", widget: "datetime"}
       - {label: "Album Cover", name: "coverImage", widget: "image"}
+      - {label: "artist", name: "artist", widget: "string"}
+      - {label: "band-id", name: "band-id", widget: "string"}
+      - {label: "spotify", name: "spotify", widget: "string"}
+      - {label: "bandcamp", name: "bandcamp", widget: "string"}
+      - {label: "soundcloud", name: "soundcloud", widget: "string"}
+      - {label: "itunes", name: "itunes", widget: "string"}
+      - {label: "googleplay", name: "googleplay", widget: "string"}
+      - {label: "amazon", name: "amazon", widget: "string"}
+      - {label: "releaseType", name: "releaseType", widget: "string"}
+      - {label: "releaseNumber", name: "releaseNumber", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
