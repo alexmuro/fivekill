@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
-import './newslist.css'
+import './newslist.scss'
 
 const dateOptions = {
 	year: 'numeric', 

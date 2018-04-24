@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 import Screen from '../components/Screen'
-import '../components/Screen/screen_release.css'
+import '../components/Screen/screen_release.scss'
 
 export default function Index({ data }) {
   const { edges: releases } = data.allMarkdownRemark;

@@ -1,10 +1,12 @@
+@import '../../theme';
+
 section.side-nav{
-    background-color:#fee4dd;
-    color:#761ed6;
+    background-color:$light-color;
+    color:$dark-color;
     overflow:auto;
     font-weight:500;
     text-align:left;
-    border-right:2px solid #761ed6;
+    border-right:2px solid $dark-color;
     height: 100%;
 }
 ul.side-nav{
@@ -21,7 +23,7 @@ ul.side-nav{
     }
 }
 a.nav-link,a.nav-link:hover{
-    color:#761ed6;
+    color:$dark-color;
     text-decoration: none;
 }
 section.side-nav .section__inner{
@@ -37,7 +39,7 @@ section.side-nav ul.side-nav{
 section.side-nav li{
     margin:0;
     vertical-align:top;
-    border:2px solid #761ed6;
+    border:2px solid $dark-color;
     overflow:auto;
     border-left:0;
     border-right:0
@@ -55,12 +57,12 @@ section.side-nav li.separator .separator__inner{
     height:50px;
     padding:15px 0;
     width:100%;
-    background-color:#fee4dd;
+    background-color:$light-color;
     background-image:url(/images/pattern-dots-tiny.svg);
     background-repeat:repeat;
     background-size:4px;
     margin-top:-2px;
-    border-top:2px solid #761ed6
+    border-top:2px solid $dark-color
 }
 section.side-nav li:first-of-type,section.side-nav li:not(:first-of-type),section.barchart li:first-of-type{
     border-top:0
@@ -112,7 +114,7 @@ section.side-nav .chart-name,section.side-nav .chart-num{
     display:inline-block;
     height:70px;
     line-height:42px;
-    background-color:#fee4dd;
+    background-color:$light-color;
     font-weight: 600;
     text-align: center;
 }
@@ -120,7 +122,7 @@ section.side-nav .chart-num{
     width:70px;
     text-align:center;
     padding:14px 0;
-    border-right:2px solid #761ed6;
+    border-right:2px solid $dark-color;
     -ms-flex:none;
     flex:none
 }
@@ -145,13 +147,13 @@ section.side-nav .chart-name{
 }
 
 section.side-nav li .row:hover,section.side-nav li.separator .separator__inner,section.filter div.options,section.filter div.value,section.filter div[data-close]{
-    text-shadow:0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd
+    text-shadow:0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color
 }
 
 /*--Logo--*/
 div.logo{
     position:relative;
-    border-bottom:2px solid #761ed6;
+    border-bottom:2px solid $dark-color;
     height:100px;
     background-image:url(/images/pattern-dots-dense.svg);
     background-size:4px
@@ -168,7 +170,7 @@ div.logo h1{
     left:0px;
     right:0px;
     bottom:0px;
-    background-image:url(/5k_logo.svg);
+    background-image:url(/images/5k-logo.svg);
     background-position:center;
     
     border-radius: 350px;
@@ -184,9 +186,9 @@ section.options{
     width:100%;
     height:64px;
     padding:0;
-    border-top:2px solid #761ed6;
-    border-right:2px solid #761ed6;
-    border-bottom:2px solid #761ed6;
+    border-top:2px solid $dark-color;
+    border-right:2px solid $dark-color;
+    border-bottom:2px solid $dark-color;
     box-sizing:border-box;
     background-image:url(/images/pattern-dots-tiny.svg);
     background-repeat:repeat;
@@ -209,7 +211,7 @@ section.options{
     display:none;
     text-align:center;
     font-weight:500;
-    border:2px solid #761ed6;
+    border:2px solid $dark-color;
     padding:30px 30px 30px 116px;
     font-size:20px;
     pointer-events:none
@@ -219,7 +221,7 @@ section.options label span,section.options label span small{
     pointer-events:none
 }
 .floater span.number{
-    border-right:2px solid #761ed6;
+    border-right:2px solid $dark-color;
     height:100%;
     position:absolute;
     top:0;
@@ -282,7 +284,7 @@ section.options label input{
     visibility:hidden
 }
 section.options label span{
-    text-shadow:0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd,0 0 3px #fee4dd;
+    text-shadow:0 0 3px $light-color,0 0 3px $light-color,0 0 3px $light-color,0 0 3px $light-color,0 0 3px $light-color,0 0 3px $light-color,0 0 3px $light-color,0 0 3px $light-color,0 0 3px $light-color,0 0 3px $light-color,0 0 3px $light-color,0 0 3px $light-color,0 0 3px $light-color,0 0 3px $light-color,0 0 3px $light-color,0 0 3px $light-color,0 0 3px $light-color,0 0 3px $light-color,0 0 3px $light-color;
     display:inline-block;
     width:33px;
     padding-top:18px;
@@ -298,8 +300,8 @@ section.options .handle{
     left:51%;
     width:52px;
     height:52px;
-    background-color:#fee4dd;
-    border:2px solid #761ed6;
+    background-color:$light-color;
+    border:2px solid $dark-color;
     border-radius:100%;
     z-index:10;
     -ms-transform:translateX(-116px);

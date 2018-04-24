@@ -1,3 +1,6 @@
+@import '../../theme';
+
+
 .releaseList {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;;
@@ -5,7 +8,7 @@
 }
 .release__link {
   text-decoration: none;
-  color: #761ed6;
+  color:$dark-color;
 }
 
 .release__title {

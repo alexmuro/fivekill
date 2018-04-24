@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import './sidebar.css'
+import './sidebar.scss'
 
 const Header = () => (
   <div>
@@ -47,14 +47,13 @@ const Header = () => (
         <section className="side-nav">
            <div className="section__inner">
               <div className="logo">
-                 <h1>BIGSOUND Buzz</h1>
-                 <a className="by-bolster" href="http://blstr.co" target="_blank">by Bolster.</a>
+                 <h1>Fivekill Records</h1>
               </div>
               <ul className="side-nav">
                 <li className="separator top">
                   <div className="separator__inner">
                   <span/><span>*</span><span>★</span>
-                    <span>FiveKill Records</span>
+                    <span>Five Kill Records</span>
                   <span>★</span><span>*</span></div>
                 </li>
                 <li>

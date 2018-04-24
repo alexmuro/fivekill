@@ -1,36 +1,37 @@
 module.exports = {
   siteMetadata: {
-    title: 'Fivekill Records',
+    title: `Fivekill Records`,
   },
   plugins: [
-  	'gatsby-plugin-react-helmet',
+  	`gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/static/assets`,
-        name: 'assets',
+        name: `assets`,
       },
     },
   	{
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/releases`,
-        name: 'releases',
+        name: `releases`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/artists`,
-        name: 'artists',
+        name: `artists`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/news`,
-        name: 'news',
+        name: `news`,
       },
     },
     
@@ -44,7 +45,7 @@ module.exports = {
               maxWidth: 590,
             },
           },
-          'gatsby-remark-copy-linked-files',
+          `gatsby-remark-copy-linked-files`,
         ],
       },
     },

@@ -1,13 +1,15 @@
+@import '../../theme';
+
 .news_container{
     text-align:left;
     display: grid;
     grid-template-columns: 1fr;
     position:relative;
-    border-bottom:2px dashed #761ed6;
+    border-bottom:2px dashed $dark-color;
     padding-bottom: 10px;
     margin-bottom:20px;
     text-decoration:none;
-    background-color:#fee4dd;
+    background-color:$light-color;
 }
 
 .news_excerpt {
@@ -17,11 +19,11 @@
 }
 .news__link{
     text-decoration: none;
-    color: #761ed6;
+    color: $dark-color;
 }
 
 .news__link:hover{
-    color: #761ed6;
+    color: $dark-color;
 }
 
 .artileList {
@@ -59,7 +61,7 @@
     padding:10px 10px 10px 45px;
     display:block;
     vertical-align:middle;
-    color:#761ed6;
+    color:$dark-color;
     height:50px;
     line-height:18px;
     font-size:14px;

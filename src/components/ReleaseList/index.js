@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 
-import './releaseList.css'
+import './releaseList.scss'
 const dateOptions = {
 	year: 'numeric', 
 	month: 'long', 

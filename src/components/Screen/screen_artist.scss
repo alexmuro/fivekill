@@ -1,14 +1,15 @@
+@import '../../theme';
+
 
 .screen__body .details__artist{
     text-align:left;
     display: grid;
     grid-template-columns: 1fr;
-
     position:relative;
-    border:2px solid #761ed6;
+    border:2px solid $dark-color;
     margin-bottom:20px;
     text-decoration:none;
-    background-color:#fee4dd;
+    background-color:$light-color;
 }
 
 
@@ -29,7 +30,7 @@
     padding:10px 10px 10px 45px;
     display:block;
     vertical-align:middle;
-    color:#761ed6;
+    color:$dark-color;
     height:50px;
     line-height:18px;
     font-size:14px;

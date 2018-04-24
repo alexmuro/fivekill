@@ -1,3 +1,5 @@
+@import '../../theme';
+
 .screen__close{
     -webkit-appearance:none;
     -moz-appearance:none;
@@ -11,7 +13,7 @@
     right:0;
     width:60px;
     height:60px;
-    border-bottom:2px solid #761ed6;
+    border-bottom:2px solid $dark-color;
     cursor:pointer
 }
 .screen__bg{
@@ -55,7 +57,7 @@
     display:block;
     width:40px;
     height:2px;
-    background:#761ed6;
+    background:$dark-color;
     margin-top:-2px
 }
 .screen__close:before{
@@ -88,9 +90,9 @@
     width:93%;
     padding:0;
 
-    background-color:#fee4dd;
-    color:#761ed6;
-    border:2px solid #761ed6;
+    background-color:$light-color;
+    color:$dark-color;
+    border:2px solid $dark-color;
     text-align:center;
     height:calc(100vh - 80px);
     z-index:9999;
@@ -119,7 +121,7 @@
     content:'';
     position:absolute;
     display:block;
-    background-color:#761ed6;
+    background-color:$dark-color;
     background-image:url(/images/pattern-dots-dense.svg);
     background-size:4px;
     z-index:-100;
@@ -138,8 +140,8 @@
     bottom:-12px
 }
 .screen__title{
-    border-bottom:2px solid #761ed6;
-    border-right:2px solid #761ed6;
+    border-bottom:2px solid $dark-color;
+    border-right:2px solid $dark-color;
     height:80px;
     padding-left:20px
 }
@@ -155,7 +157,7 @@
 }
 .screen__title h3{
     margin:0;
-    color:#761ed6;
+    color:$dark-color;
     line-height:60px;
     text-align:left;
     font-size: 1.3em;
@@ -176,25 +178,25 @@
 
 .screen__scrollarea::-webkit-scrollbar {
   width: 2px;
-  background-color:#fee4dd; /* or add it to the track */
+  background-color:$light-color; /* or add it to the track */
 }
 
 .screen__scrollarea::-webkit-scrollbar-track
 {
     -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
-    background-color: #fee4dd;
+    background-color: $light-color;
     border-radius: 10px;
 }
 
 .screen__scrollarea::-webkit-scrollbar
 {
     width: 4px;
-    background-color: #fee4dd;
+    background-color: $light-color;
 }
 
 .screen__scrollarea::-webkit-scrollbar-thumb
 {
-    background-color: #761ed6;
+    background-color: $dark-color;
     border-radius: 10px;
     background-image: -webkit-linear-gradient(90deg,
                                               rgba(0, 0, 0, .2) 25%,
@@ -332,8 +334,8 @@
     font-size:11px
 }
 .screen__body .body__right ul li a{
-    text-shadow:0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd,0 0 4px #fee4dd;
-    background-color:#fee4dd;
+    text-shadow:0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color,0 0 4px $light-color;
+    background-color:$light-color;
     background-image:url(/images/pattern-dots-tiny.svg);
     background-repeat:repeat;
     background-size:4px;
@@ -341,14 +343,14 @@
     width:42px;
     height:42px;
     text-decoration:none!important;
-    border:2px solid #761ed6;
+    border:2px solid $dark-color;
     border-radius:200px;
     padding:6px 5px 4px;
     margin:0 5px
 }
 .screen__body .body__right ul li a:hover{
-    background-color:#761ed6;
-    color:#fee4dd;
+    background-color:$dark-color;
+    color:$light-color;
     text-shadow:none
 }
 .screen__body input[type=email]{
@@ -356,7 +358,7 @@
     font-weight:500;
     text-transform:uppercase;
     letter-spacing:.1em;
-    color:#761ed6
+    color:$dark-color
 }
 .screen__body ::-webkit-input-placeholder{
     color:rgba(118,30,214,.7)
@@ -391,7 +393,7 @@
         display:block;
         width:2px;
         height:80%;
-        background-color:#761ed6;
+        background-color:$dark-color;
         border:0;
         margin:0;
         padding:0
@@ -403,15 +405,15 @@
 }
 .screen__body .mc-field-group input[type=email]{
     padding:10px;
-    background-color:#fee4dd;
-    border:2px solid #761ed6;
+    background-color:$light-color;
+    border:2px solid $dark-color;
     outline:0;
     vertical-align:top
 }
 .screen__body .mc-field-group input[type=submit]{
     padding:10px;
-    border:2px solid #761ed6;
-    background-color:#761ed6;
+    border:2px solid $dark-color;
+    background-color:$dark-color;
     font-size:0;
     vertical-align:top;
     width:36px;
@@ -598,8 +600,8 @@ a.itunes:before,
     width:100%;
     height:72px;
     padding-left:70px;
-    border-top:2px solid #761ed6;
-    background-color:#fee4dd;
+    border-top:2px solid $dark-color;
+    background-color:$light-color;
     background-image:url(/images/pattern-dots-dense.svg);
     background-size:3px
 }
@@ -609,8 +611,8 @@ a.itunes:before,
     font-weight:700;
     font-size:14px;
     padding:10px 20px 10px 15px;
-    background-color:#761ed6;
-    color:#fee4dd;
+    background-color:$dark-color;
+    color:$light-color;
     display:block;
     left:50%;
     top:50%;
@@ -620,7 +622,7 @@ a.itunes:before,
     width:calc(100% - 20px)
 }
 .screen__footer .track-artist,.screen__footer .track-title{
-    text-shadow:0 0 2px #fee4dd,0 0 2px #fee4dd,0 0 2px #fee4dd,0 0 2px #fee4dd,0 0 2px #fee4dd,0 0 2px #fee4dd,0 0 2px #fee4dd,0 0 2px #fee4dd,0 0 2px #fee4dd,0 0 2px #fee4dd,0 0 2px #fee4dd,0 0 2px #fee4dd,0 0 2px #fee4dd,0 0 2px #fee4dd,0 0 2px #fee4dd,0 0 2px #fee4dd,0 0 2px #fee4dd,0 0 2px #fee4dd,0 0 2px #fee4dd;
+    text-shadow:0 0 2px $light-color,0 0 2px $light-color,0 0 2px $light-color,0 0 2px $light-color,0 0 2px $light-color,0 0 2px $light-color,0 0 2px $light-color,0 0 2px $light-color,0 0 2px $light-color,0 0 2px $light-color,0 0 2px $light-color,0 0 2px $light-color,0 0 2px $light-color,0 0 2px $light-color,0 0 2px $light-color,0 0 2px $light-color,0 0 2px $light-color,0 0 2px $light-color,0 0 2px $light-color;
     font-size:13px;
     text-align:left
 }
@@ -637,8 +639,8 @@ a.itunes:before,
     margin-right:10px
 }
 .screen__footer .track-link:hover{
-    background-color:#fee4dd;
-    color:#761ed6
+    background-color:$light-color;
+    color:$dark-color
 }
 .screen__footer .play-button{
     cursor:pointer;
@@ -649,7 +651,7 @@ a.itunes:before,
     width:70px;
     height:70px;
     z-index:10;
-    color:#761ed6
+    color:$dark-color
 }
 @media only screen and (min-width:768px){
     .screen__footer .play-button{
@@ -673,7 +675,7 @@ a.itunes:before,
     height:0;
     border-top:10px solid transparent;
     border-bottom:10px solid transparent;
-    border-left:12px solid #761ed6
+    border-left:12px solid $dark-color
 }
 .screen__footer .play-button .play:before{
     content:'';
@@ -682,9 +684,9 @@ a.itunes:before,
     background-color:transparent;
     height:20px;
     border-top:0;
-    border-left:6px solid #761ed6;
+    border-left:6px solid $dark-color;
     border-bottom:0;
-    border-right:6px solid #761ed6
+    border-right:6px solid $dark-color
 }
 .screen__footer .play-button.playing .play{
     border-color:transparent;
@@ -704,11 +706,11 @@ a.itunes:before,
     height:58px
 }
 .screen__footer .play-button svg circle.center{
-    fill:#fee4dd;
-    stroke:#761ed6
+    fill:$light-color;
+    stroke:$dark-color
 }
 .screen__footer .play-button svg circle.inner{
-    stroke:#fee4dd;
+    stroke:$light-color;
     fill:transparent;
     stroke-dashoffset:220;
     stroke-dasharray:220;
@@ -719,7 +721,7 @@ a.itunes:before,
     transition:stroke-dashoffset .5s linear
 }
 .screen__footer .play-button svg circle.outer{
-    stroke:#761ed6;
+    stroke:$dark-color;
     fill:transparent;
     stroke-dashoffset:251;
     stroke-dasharray:251;
@@ -919,13 +921,13 @@ a.itunes:before,
     left:0;
     width:70px;
     height:70px;
-    border-right:2px solid #761ed6;
+    border-right:2px solid $dark-color;
     z-index:5
 }
 .floater,section.options{
     z-index:1000;
-    color:#761ed6;
-    background-color:#fee4dd
+    color:$dark-color;
+    background-color:$light-color
 }
 @media only screen and (min-width:768px){
     .screen__footer .track-cover{
