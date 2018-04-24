@@ -5,13 +5,12 @@ date: '2017-07-12T17:12:33.962Z'
 pressPhoto: /static/assets/bear-grass-0008.jpg
 band-id: bear_grass
 website: 'https://www.beargrasssongs.com/'
-spotify: '#'
-bandcamp: '#'
-facebook: '#'
-twitter: '#'
-instagram: '#beargrasssongs'
-booking: '#'
-press: '#'
+spotify: ''
+bandcamp: 'https://beargrass.bandcamp.com/'
+facebook: 'https://www.facebook.com/beargrassband/'
+instagram: 'http://instagram.com/beargrasssongs'
+booking: BearGrassBooking@gmail.com
+press: ''
 ---
 Bear Grass was conceived as a solo project for singer/songwriter Katie Hammon, then of the band Slender Shoulders, releasing her first album "In The Light" on B3nson Records in 2011. In the fall of 2012, Katie was invited to play at Albany's annual Harvest Festival. Ian White, Mitch Masterson and Stephen Stanley rounded out Bear Grass "the band" for the inaugural performance. 
 
