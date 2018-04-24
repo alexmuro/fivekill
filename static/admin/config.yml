@@ -2,7 +2,7 @@ backend:
   name: github
   repo: alexmuro/fivekill
 
-media_folder: content/assets
+media_folder: static/assets
 publish_mode: editorial_workflow
 
 collections:

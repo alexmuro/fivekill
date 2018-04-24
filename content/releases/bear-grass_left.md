@@ -4,7 +4,7 @@ date: "2018-08-10T00:00:00.000Z"
 title: "LEFT"
 artist: "Bear Grass"
 releaseNumber: "5k004"
-coverImage: /content/assets/left-cover.jpeg
+coverImage: /static/assets/left-cover.jpeg
 type: 'release'
 releaseType: 'LP'
 spotify: "https://open.spotify.com/user/0bhp0q85lhsd7q9n5mjmhfgbx/playlist/6vswt39uXtUefMVqFKIgDJ"

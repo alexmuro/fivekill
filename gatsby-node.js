@@ -20,11 +20,11 @@ exports.onCreateNode = ({
   	// console.log('--------------------')
     // Attach thumbnail's ImageSharp node by public path if necessary
     if (typeof node.frontmatter.coverImage === 'string') {
-      	node.frontmatter.coverImage = node.frontmatter.coverImage.replace('/content/', '../')
+      	node.frontmatter.coverImage = node.frontmatter.coverImage.replace('/static/', '../../static/')
     }
 
     if (typeof node.frontmatter.pressPhoto === 'string') {
-      	node.frontmatter.pressPhoto = node.frontmatter.pressPhoto.replace('/content/', '../')
+      	node.frontmatter.pressPhoto = node.frontmatter.pressPhoto.replace('/static/', '../../static/')
     }
  
   }

@@ -1,7 +1,7 @@
 ---
 path: /releases/kiku
 date: '2018-04-13T10:53:52-04:00'
-coverImage: /content/assets/The Parlor-Kiku-Cover-art-2000px.jpg
+coverImage: /static/assets/The Parlor-Kiku-Cover-art-2000px.jpg
 title: Kiku
 artist: The Parlor
 band-id: the_parlor
