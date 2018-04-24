@@ -21,7 +21,7 @@ collections:
     folder: content/artists
     create: true
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "name", widget: "string"}
+      - {label: "Artist Name", name: "name", widget: "string"}
       - {label: "Path", name: "path", widget: "string", default: "/artists/"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Press Photo", name: "pressPhoto", widget: "image"}
@@ -40,10 +40,10 @@ collections:
     folder: content/releases
     create: true
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
       - {label: "Path", name: "path", widget: "string", default: "/artists/"}
       - {label: "Street Date", name: "date", widget: "datetime"}
       - {label: "Album Cover", name: "coverImage", widget: "image"}
+      - {label: "Release Title", name: "title", widget: "string"}
       - {label: "artist", name: "artist", widget: "string"}
       - {label: "band-id", name: "band-id", widget: "string"}
       - {label: "spotify", name: "spotify", widget: "string"}
