@@ -15,7 +15,7 @@ const IndexPage = () => (
 	        and Bee Side Cassettes.
 	        </p>
 	        <p>
-			Five Kill is a label run by musicians, artists, producers, engineers, promoters, house-show operators, editors, and videographers
+			Five Kill is a label run by musicians, artists, producers, engineers, promoters, house-show operators, editors, and videographers.
 			 The label’s aim is to support musicians and aid in developing their careers by providing ideas, support and access to music industry
 			 services to enrich the region’s creative economy. Fivekill is a not for profit record label reinvesting
 			 its income back into services for artists. 
