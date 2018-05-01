@@ -1,6 +1,6 @@
 ---
 path: /releases/leave-me-alone
-date: '2018-05-01T10:04:42-04:00'
+date: '2018-05-01T09:00:00-04:00'
 coverImage: /static/assets/Copy of Onlyness Cover.jpg
 title: Leave Me Alone
 releaseNumber: 5KS007
