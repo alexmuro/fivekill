@@ -18,7 +18,7 @@ function NewsListing(props) {
 	    : <span />
 
 	return (
-		<div className='article' key={news.id}>
+		<div className='article newsList' key={news.id}>
 		   	<Link to={news.frontmatter.path} className="news__link" >
 	    		<div className='news_container'>
 	    			<div className='news_image'>
@@ -55,7 +55,7 @@ export default function Index(props) {
   return (
 	  <section>
       	<SectionHeader title={props.title} />
-      	<div className='newsList'>
+      	<div >
       		{ articles }
       	</div>
 	  </section>
