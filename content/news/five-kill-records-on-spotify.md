@@ -1,6 +1,6 @@
 ---
 title: Five Kill Records on Spotify
-path: /news/
+path: /news/five-kill-on-spotify
 date: '2018-05-01T16:25:00-04:00'
 coverImage: /static/assets/five-kill-artists-playlist-1-1.jpg
 ---
