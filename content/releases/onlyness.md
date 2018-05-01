@@ -8,4 +8,4 @@ artist: Onlyness
 band-id: onlyness
 releaseType: LP
 ---
-More info on the debut from Onlyness coming soon.
+Onlyness.
