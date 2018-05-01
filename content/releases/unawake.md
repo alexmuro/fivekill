@@ -5,7 +5,7 @@ coverImage: /static/assets/left-cover.jpeg
 title: Unawake
 releaseNumber: 5KS005
 artist: Bear Grass
-band-id: bear-grass
+band-id: bear_grass
 spotify: >-
   https://open.spotify.com/album/6FClyuksqyp274D1VgAa5G?si=oGsk-0vxRY6LnvH2QEKpOQ
 releaseType: Single
