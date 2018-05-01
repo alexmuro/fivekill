@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import Img from 'gatsby-image'
 import Screen from '../components/Screen'
+import SectionHeader from '../components/Layout/SectionHeader'
 const stores = ['spotify','bandcamp','youtube','itunes','play']
 // import '../css/blog-post.css'; // make it pretty!
 
@@ -39,14 +40,14 @@ export default function ArtistTemplate({
           </div>
         
         <div className="blog-post">
-          <h3 className='sectionHeader'>Artist Bio</h3>
+          <SectionHeader title='ARTIST BIO' />
           <div
             className="album-release-content"
             style={{textAlign:'justify'}}
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
-          <h3 className='sectionHeader'>Tour Dates</h3>
-          <h3 className='sectionHeader'>Releases</h3>
+          <SectionHeader title='Tour Dates' />
+          <SectionHeader title='Releases' />
         </div>
       </Screen>
     </section>

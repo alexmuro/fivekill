@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
+import SectionHeader from '..//Layout/SectionHeader'
 
 import './releaseList.scss'
 const dateOptions = {
@@ -19,17 +20,20 @@ function Album(props) {
 	return (
 		<div className='album' key={release.id}>
 		   	<Link to={release.frontmatter.path} className="release__link" >
-	    		<span>
+	    		<span >
 	    			{image}
-	    			<div className='release__title'>
-	    				{release.frontmatter.releaseNumber} - <span className='strong'>{release.frontmatter.title}</span>
-	    			</div>
-	    			<div className='release__artist'>
-	    				{release.frontmatter.artist}
-	    			</div>
-	    			<div className="release__date strong">
-	    				{release.frontmatter.date.toLocaleDateString('en-US', dateOptions)}
-	    			</div>
+	    			<div className='release__details'> 
+		    			<div className='release__title'>
+		    			 {release.frontmatter.artist} - <span className='strong'>{release.frontmatter.title}</span> 
+		    			 <span style={{float: 'right'}}> {release.frontmatter.releaseNumber}  </span>
+		    			</div>
+		    			<div className='release__artist'>
+		    				
+		    			</div>
+		    			<div className="release__date strong">
+		    				{release.frontmatter.date.toLocaleDateString('en-US', dateOptions)}
+		    			</div>
+		    		</div>
 	    		</span>
 			</Link>
 		</div>
@@ -43,8 +47,8 @@ export default function Index(props) {
     .map((release,index) => <Album key={release.id} release={release} />)
   
   return (
-	  <section>
-      	<h3 className='sectionHeader'>{props.title}</h3>
+	  <section style={{marginBottom: -30, paddingLeft: 10}}>
+	  	<SectionHeader title={props.title} />
       	<div className='releaseList'>
       		{ albums }
       	</div>

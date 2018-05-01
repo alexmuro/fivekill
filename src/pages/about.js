@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Screen from '../components/Screen'
+import SectionHeader from '../components/Layout/SectionHeader'
 
 const IndexPage = () => (
   <section className='content'>
@@ -20,15 +21,19 @@ const IndexPage = () => (
 			 its income back into services for artists. 
 			</p>
 		
-			<h3 className='sectionHeader'>Contact</h3>
+			
+			<SectionHeader title='CONTACT' />
 			<p>
 			<strong>Gerneral Inquiries:</strong> info@fivekillrecords.com<br />
 			<strong>Press:</strong> press@fivekillrecords.com
 			</p>
-			<h3 className='sectionHeader'>Demo Submissions</h3>
+			<SectionHeader title='DEMO SUBMISSIONS' />
 			<p>
-			Fivekill will accept demos in the form of links to track or album streams emailed to demos@fivekillrecords.com. Do NOT attach audio files,
+			Fivekill will accept demos in the form of links to track or album streams emailed to <strong>demos@fivekillrecords.com</strong>. Do NOT attach audio files,
 			they will not get listened to.
+			</p>
+			<p>
+			Due to wanting to seem like a legitmate lable we probably won't get back to you about your submission. That's what we are supposed to do right?
 			</p>
 		</div>
       </Screen>

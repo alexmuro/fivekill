@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
+import SectionHeader from '../Layout/SectionHeader'
 import './newslist.scss'
 
 const dateOptions = {
@@ -39,6 +40,7 @@ function NewsListing(props) {
 	)
 }
 
+
 export default function Index(props) {
   let articles = props.news
     .filter(newsItem => {
@@ -52,11 +54,14 @@ export default function Index(props) {
   
   return (
 	  <section>
-      	<h3 className='sectionHeader'>{props.title}</h3>
-      	<div className='artileList'>
+      	<SectionHeader title={props.title} />
+      	<div className='newsList'>
       		{ articles }
       	</div>
 	  </section>
 	)
 }
 
+export {
+	NewsListing
+}

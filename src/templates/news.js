@@ -13,17 +13,11 @@ export default function Template({
               ? <Img className=" processed" sizes={post.frontmatter.coverImage.childImageSharp.sizes} />
               : <img className="release__thumbnail processed" src="" />
 
-   let socials = {}
-
-   stores.forEach(key => {
-     if(post.frontmatter[key] && post.frontmatter[key].length > 0){
-        socials[key] = post.frontmatter[key]
-     }
-   })
+  
   
   return (
     <section className='content'>
-      <Screen title={post.frontmatter.title} subtitle={` by ${post.frontmatter.artist}`} socials={socials}>
+      <Screen title={post.frontmatter.title} subtitle={` - ${post.frontmatter.date}`} >
         <Helmet title={`${post.frontmatter.title} - Fivekill`} />
         <div className="details__artist" >
           <div className='img__release'> 

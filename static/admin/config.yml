@@ -41,10 +41,11 @@ collections:
     folder: content/releases
     create: true
     fields: # The fields for each document, usually in front matter
-      - {label: "Path", name: "path", widget: "string", default: "/artists/"}
+      - {label: "Path", name: "path", widget: "string", default: "/releases/"}
       - {label: "Street Date", name: "date", widget: "datetime"}
       - {label: "Album Cover", name: "coverImage", widget: "image"}
       - {label: "Release Title", name: "title", widget: "string"}
+      - {label: "releaseNumber", name: "releaseNumber", widget: "string"}
       - {label: "artist", name: "artist", widget: "string"}
       - {label: "band-id", name: "band-id", widget: "string"}
       - {label: "spotify", name: "spotify", widget: "string", required: false}
@@ -54,5 +55,4 @@ collections:
       - {label: "googleplay", name: "googleplay", widget: "string", required: false}
       - {label: "amazon", name: "amazon", widget: "string", required: false}
       - {label: "releaseType", name: "releaseType", widget: "string"}
-      - {label: "releaseNumber", name: "releaseNumber", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
