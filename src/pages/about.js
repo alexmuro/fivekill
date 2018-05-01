@@ -29,12 +29,10 @@ const IndexPage = () => (
 			</p>
 			<SectionHeader title='DEMO SUBMISSIONS' />
 			<p>
-			Fivekill will accept demos in the form of links to track or album streams emailed to <strong>demos@fivekillrecords.com</strong>. Do NOT attach audio files,
+			Five Kill will accept demos in the form of links to track or album streams emailed to <strong>demos@fivekillrecords.com</strong>. Do NOT attach audio files,
 			they will not get listened to.
 			</p>
-			<p>
-			Due to wanting to seem like a legitmate lable we probably won't get back to you about your submission. That's what we are supposed to do right?
-			</p>
+			
 		</div>
       </Screen>
   </section>

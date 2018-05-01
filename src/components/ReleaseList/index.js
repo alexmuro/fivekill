@@ -49,7 +49,7 @@ export default function Index(props) {
   return (
 	  <section style={{marginBottom: -30, paddingLeft: 10}}>
 	  	<SectionHeader title={props.title} />
-      	<div className='releaseList'>
+      	<div className={props.vertical ? 'releaseListVertical' : 'releaseList'}>
       		{ albums }
       	</div>
 	  </section>

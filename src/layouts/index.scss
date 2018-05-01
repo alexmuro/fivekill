@@ -2,7 +2,11 @@
 
 /* ------- Custom stuff  */
 
-
+.releaseConainer {
+    display: grid;
+    grid-template-columns: 1fr 310px;
+    padding-top: 20px;
+}
 
 .sectionHead h3 {
     color: darken( $dark-color, 10%);
