@@ -3,7 +3,7 @@ path: /releases/rechorduroys
 date: '2018-06-08T09:56:56-04:00'
 coverImage: /static/assets/Rechorduroys_Album_2018_HIRES.jpg
 title: Rechorduroys
-releaseNumber: 5k002
+releaseNumber: 5K002
 artist: Rechorduroys
 band-id: rechorduroys
 releaseType: LP
