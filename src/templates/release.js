@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import Img from 'gatsby-image'
 import Screen from '../components/Screen'
+import SectionHeader from '../components/Layout/SectionHeader'
 const stores = ['spotify','bandcamp','youtube','itunes','play']
 // import '../css/blog-post.css'; // make it pretty!
 
@@ -45,7 +46,7 @@ export default function Template({
           </div>
         </div>
         <div className="blog-post">
-          <h3 className='sectionHeader'>ALBUM BLURB</h3>
+          <SectionHeader title='ALBUM BLURB' />
           <div
             className="album-release-content"
             style={{textAlign:'justify'}}
