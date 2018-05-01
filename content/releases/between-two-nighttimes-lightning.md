@@ -3,7 +3,7 @@ path: /releases/between-two-nighttimes-lightning
 date: '2018-05-01T09:00:00-04:00'
 coverImage: /static/assets/btnl_cover.jpg
 title: Between Two Nighttimes Lightning
-releaseNumber: 5ks006
+releaseNumber: 5KS006
 artist: Neighborhood of Make Believe
 band-id: nhomb
 spotify: >-
