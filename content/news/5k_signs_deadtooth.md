@@ -1,5 +1,5 @@
 ---
-title: Five Kill New Signings, Fall Release Schedule
+title: Five Signs Deadtooth Announces Release of Still Beats EP
 path: /news/launch_2
 date: '2018-08-27T07:40:05-04:00'
 coverImage: /static/assets/gf.jpg
