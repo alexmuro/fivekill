@@ -325,6 +325,10 @@ section.options .handle{
     }
 }
 @media only screen and (max-width:767px){
+    // section.options[data-active-option="6h"] .handle{
+    //    top: -200px; 
+    // }
+    
     section.options[data-active-option="6h"] .handle{
         -ms-transform:translateX(-146px);
         transform:translateX(-146px)

@@ -1,43 +1,58 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { push } from "gatsby-link"
 import './sidebar.scss'
 
-const Header = () => (
+function navigate(event, url) {
+  console.log('event',event.target.getAttribute('data-location'))
+  //window.location = url
+  if(event.target.getAttribute('type') === 'radio') {
+    push(event.target.getAttribute('data-location'))
+  }
+}
+
+const Header = () => {
+  return (
   <div>
-    <section className="options">
+    <section className="options" data-active-option='12h'>
        <div className="section__inner">
           <label htmlFor="option-radio-12h">
             <span><small>BANDS</small></span>
             <input id="option-radio-12h"
              name="option-radio"
              type="radio"
-             selected
-             data-option
-             data-option-period="12h" />
+             onClick={navigate} 
+             data-location='/artists'
+            />
           </label>
           <label htmlFor="option-radio-1d">
             <span><small>RECS</small></span>
             <input id="option-radio-1d"
              name="option-radio"
              type="radio"
-             data-option
-             data-option-period="1d" />
+             onClick={navigate} 
+             data-location='/releases'
+            />
           </label>
-          <label htmlFor="option-radio-1d">
+          <label htmlFor="option-radio-2d">
             <span><small>NEWS</small></span>
-            <input id="option-radio-1d"
+            <input id="option-radio-2d"
              name="option-radio"
              type="radio"
+             selected
+             onClick={navigate} 
+             data-location='/news' 
              data-option
-             data-option-period="1d" />
+             data-option-period="7d"
+             />
           </label>
-          <label htmlFor="option-radio-1d">
+          <label htmlFor="option-radio-7d">
             <span><small>ABT</small></span>
-            <input id="option-radio-1d"
+            <input id="option-radio-7d"
              name="option-radio"
              type="radio"
-             data-option
-             data-option-period="1d" />
+             onClick={navigate} 
+             data-location='/about' />
           </label>
           <div className="handle"></div>
        </div>
@@ -46,9 +61,11 @@ const Header = () => (
       <div className="section__inner">
         <section className="side-nav">
            <div className="section__inner">
-              <div className="logo">
-                 <h1>Fivekill Records</h1>
-              </div>
+              <Link to='/'>
+                <div className="logo">
+                   <h1>Fivekill Records</h1>
+                </div>
+              </Link>
               <ul className="side-nav">
                 <li className="separator top">
                   <div className="separator__inner">
@@ -93,6 +110,5 @@ const Header = () => (
      </div>
     </section>
   </div>
-)
-
+)}
 export default Header

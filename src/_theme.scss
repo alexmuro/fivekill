@@ -1,2 +1,6 @@
-$dark-color: #5A96FF;/*#761ed6;*/
-$light-color: #EAE4FF; /*#fee4dd*/
+$dark-color: #111;
+$light-color: #efefef;
+
+.st3{
+	fill: lighten($light-color,20%); //#5A96FF
+}
