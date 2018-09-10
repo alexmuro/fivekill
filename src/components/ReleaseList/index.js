@@ -24,15 +24,12 @@ function Album(props) {
 	    			{image}
 	    			<div className='release__details'> 
 		    			<div className='release__title'>
-		    			 {release.frontmatter.artist} - <span className='strong'>{release.frontmatter.title}</span> 
-		    			 <span style={{float: 'right'}}> {release.frontmatter.releaseNumber}  </span>
+		    			  <span className='strong'>{release.frontmatter.title}</span> 
 		    			</div>
 		    			<div className='release__artist'>
-		    				
+		    				{release.frontmatter.artist}	
 		    			</div>
-		    			<div className="release__date strong">
-		    				{release.frontmatter.date.toLocaleDateString('en-US', dateOptions)}
-		    			</div>
+		    			
 		    		</div>
 	    		</span>
 			</Link>

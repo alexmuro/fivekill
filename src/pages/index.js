@@ -14,16 +14,18 @@ const IndexPage = ({data}) => {
 	const { edges: news } = data.news;
 	let futureReleases = releases
 		.map(makeDate)
-		.filter(release => {
-			return release.frontmatter.date > NOW
-		})
-		.reverse()
+	// 	.filter(release => {
+	// 		return release.frontmatter.date > NOW
+	// 	})
+	// 	.reverse()
 	
-	let recentReleases = releases
-		.map(makeDate)
-		.filter(release => {
-			return release.frontmatter.date < NOW
-		})
+	// let recentReleases = releases
+	// 	.map(makeDate)
+	// 	.filter(release => {
+	// 		return release.frontmatter.date < NOW
+	// 	})
+
+
 
 	return (
 	  <section className='content'>
@@ -32,13 +34,9 @@ const IndexPage = ({data}) => {
 	  
   		<ReleaseList 
 	  		title='LATEST RELEASES'
-	  		releases={recentReleases}
-	  	/>
-	  	<ReleaseList
-	  		title='UPCOMING RELEASES'
 	  		releases={futureReleases}
 	  	/>
-
+	  	
 
 	  
 	  	<NewsList
