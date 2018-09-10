@@ -3,6 +3,7 @@ title: Five Signs Deadtooth Announces Release of Still Beats EP
 path: /news/deadtooth_signed
 date: '2018-08-27T07:40:05-04:00'
 coverImage: /static/assets/DEADTOOTH-HIRES-BAND-SHOT-8.png
+---
 
 Five Kill Records is please to announce we have signed the bands Dead Tooth and will be releasing the EP Still Beats on Septemeber 26th.
 
