@@ -1,6 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import { push } from "gatsby-link"
+import Link,  { push }  from 'gatsby-link'
 import './sidebar.scss'
 
 function navigate(event, url) {
