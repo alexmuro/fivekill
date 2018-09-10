@@ -3,15 +3,16 @@ path: /releases/left
 date: '2018-08-10T00:00:00.000Z'
 coverImage: /static/assets/left-cover.jpeg
 title: LEFT
+releaseNumber: 5K004
 artist: Bear Grass
 band-id: bear_grass
 spotify: >-
-  https://open.spotify.com/user/0bhp0q85lhsd7q9n5mjmhfgbx/playlist/6vswt39uXtUefMVqFKIgDJ
-bandcamp: 'https://beargrass.bandcamp.com/'
+  https://open.spotify.com/album/7MhyagF3NjINI5j8dV4q8l?si=1f2OnWGzSaa-n4zPn0Yleg
+bandcamp: 'https://beargrass.bandcamp.com/album/left'
 soundcloud: ''
-itunes: ''
+itunes: 'https://itunes.apple.com/us/album/left/1397574496'
+amazon: 'http://a.co/1H0WgaV'
 releaseType: LP
-releaseNumber: 5K004
 ---
 
 LEFT is the sophomore album of Troy, NY based indie rock band, Bear Grass. The group consists of lead singer, guitarist, and songwriter Katie Hammon, bassist August Sagehorn, Tommy Krebs, vocals, keys and guitar, and drummer Ian White. Bear Grass has performed across the east coast since 2013 and offers an intoxicating performance that wraps their audience in emotion. 
