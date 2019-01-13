@@ -1,5 +1,5 @@
 ---
-path: /releases/savingabeauty
+path: /releases/saving_a_beauty
 date: '2018-11-27T09:36:58-05:00'
 coverImage: /static/assets/blue-ranger-cover-art2.jpeg
 title: Saving a Beauty
