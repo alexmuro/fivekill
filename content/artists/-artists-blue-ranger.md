@@ -1,6 +1,6 @@
 ---
 name: Blue Ranger
-path: /artists/blue Ranger
+path: /artists/blue_ranger
 date: '2017-07-12T17:12:33.962Z'
 pressPhoto: /static/assets/JOSHCOVER.JPG
 band-id: blue_ranger
@@ -8,7 +8,6 @@ website: '#'
 spotify: '#'
 bandcamp: '#'
 facebook: '#'
-twitter: '#'
 instagram: '#'
 booking: '#'
 press: '#'
