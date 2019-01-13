@@ -18,7 +18,7 @@ function NewsListing(props) {
 	    : <span />
 
 	return (
-		<div className='article newsList' key={news.id}>
+		<div className='article newsList' key={news.id} style={{boxShadow: '0px 2px 6px 0px hsla(0, 0%,0%,0.2)', border: '5px solid #fefefe'}}>
 		   	<Link to={news.frontmatter.path} className="news__link" >
 	    		<div className='news_container'>
 	    			<div className='news_image'>
