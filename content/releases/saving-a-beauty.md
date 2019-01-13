@@ -8,6 +8,9 @@ artist: Blue Ranger
 band-id: blue_ranger
 spotify: 'https://open.spotify.com/album/3px8EbVmsNLFisshDWFIEx'
 bandcamp: 'https://blueranger.bandcamp.com/album/saving-a-beauty'
+itunes: 'https://itunes.apple.com/us/album/saving-a-beauty/1432138050'
+googleplay: >-
+  https://play.google.com/store/music/album/Blue_Ranger_Saving_a_Beauty?id=Blsbpv6fdhj6mlxrnwpnjeksu4y&hl=en
 amazon: 'https://www.amazon.com/Saving-Beauty-Blue-Ranger/dp/B07H5VV3WX'
 releaseType: LP
 ---
