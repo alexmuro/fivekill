@@ -509,7 +509,7 @@
     bottom:8px
 }
 
-.screen__title a.artist-social{
+a.artist-social{
     font-size:0;
     text-decoration:none;
     animation:all .2s ease-in-out;
@@ -536,13 +536,13 @@
         height:36px
     }
 }
-.screen__title a.artist-social:last-of-type{
+a.artist-social:last-of-type{
     margin-right:0
 }
 
 
 
-.screen__title a.artist-social:before{
+a.artist-social:before{
     top:50%;
     left:50%;
     -ms-transform:translate(-50%,-50%);
@@ -583,7 +583,7 @@ a.itunes:before,
     padding:10px
 }
 @media only screen and (min-width:768px){
-    .screen__title a.artist-social:before{
+    a.artist-social:before{
         -ms-transform:translateY(-50%) translateX(-50%);
         transform:translateY(-50%) translateX(-50%)
     }
@@ -979,54 +979,55 @@ a.itunes:before,
 .screen__body .mc-field-group input[type=submit]{
     background-position:0 0
 }
-.screen__title a.facebook:before{
+a.facebook:before{
     background-position:-20px -5px;
     width:20px;
     height:20px
 }
-.screen__title a.instagram:before{
+a.instagram:before{
     background-position: 4px -30px;
     width:20px;
     height:20px
 }
 
-.screen__title a.twitter:before{
+a.twitter:before{
     background-position:-14px -45px;
     width:20px;
     height:20px
 }
 
-.screen__title a.play:before{
+a.play:before{
     background-position:-70px -24px;
     width:20px;
     height:20px
 }
 
-.screen__title a.youtube:before{
+a.youtube:before{
     background-position:-57px -3px;
     width:20px;
     height:20px
 }
 
-.screen__title a.bandcamp:before{
+a.bandcamp:before{
     background-position:-32px -43px;
     width:20px;
     height:20px
 }
 
-.screen__title a.amazon:before{
+a.amazon:before{
     background-position:-55px -43px;
     width:19px;
     height:19px
 }
 
-.screen__title a.itunes:before{
+a.itunes:before{
     background-position:-75px -43px;
     width:20px;
     height:20px
 }
 
-.screen__footer .track-link:hover:before,.screen__title a.spotify:before{
+.screen__footer .track-link:hover:before,
+a.spotify:before{
     background-position:-40px -22px;
     width:20px;
     height:20px
@@ -1041,3 +1042,5 @@ a.itunes:before,
 .album-release-content{
     text-align: justify;
 }
+
+

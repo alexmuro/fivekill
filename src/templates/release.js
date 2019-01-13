@@ -42,6 +42,20 @@ export default function Template({
             <div className="date__release">Street Date: {post.frontmatter.date}</div>
             <div className="post__message">
              &nbsp;&nbsp;{post.excerpt}
+              <div style={{display:'flex', width: '100%', alignItems: 'stretch'}}>
+              {
+                stores.map(key => {
+                  return (
+                    <a
+                      href={post.frontmatter[key]} style={{textAlign: 'center'}} target="_blank" rel="noopener noreferrer">
+                    
+                      <img className='social-icon-svg' style={{width: '100%', padding: 15, fill:'#ccc'}} alt={key} src={`/images/social/${key}.svg`} />
+                        <br/><span style={{fontSize: '10px'}}>{key}</span>
+                    </a>
+                  ) 
+                })
+              }
+              </div>
             </div>
           </div>
         </div>

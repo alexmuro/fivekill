@@ -21,7 +21,9 @@ function Album(props) {
 		<div className='album' key={release.id}>
 		   	<Link to={release.frontmatter.path} className="release__link" >
 	    		<span >
+	    			<div style={{boxShadow: '0px 2px 6px 0px hsla(0, 0%,0%,0.2)', border: '5px solid #fefefe'}}>
 	    			{image}
+	    			</div>
 	    			<div className='release__details'> 
 		    			<div className='release__title'>
 		    			  <span className='strong'>{release.frontmatter.title}</span> 
