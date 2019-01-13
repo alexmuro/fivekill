@@ -1,7 +1,7 @@
 ---
 name: Burly
 path: /artists/burly
-date: 2019-01-18T05:00:00.000Z
+date: 2019-01-13T17:00:00.000Z
 pressPhoto: /static/assets/burly-santa-claus-press-pic.jpg
 band-id: burly
 website: 'http://burly.email'
