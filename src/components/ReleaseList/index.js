@@ -4,11 +4,11 @@ import Img from 'gatsby-image'
 import SectionHeader from '..//Layout/SectionHeader'
 
 import './releaseList.scss'
-const dateOptions = {
-	year: 'numeric', 
-	month: 'long', 
-	day: 'numeric' 
-}
+// const dateOptions = {
+// 	year: 'numeric', 
+// 	month: 'long', 
+// 	day: 'numeric' 
+// }
 
 
 function Album(props) {

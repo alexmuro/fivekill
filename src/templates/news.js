@@ -2,7 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import Img from 'gatsby-image'
 import Screen from '../components/Screen'
-const stores = ['spotify','bandcamp','youtube','itunes','play']
+// const stores = ['spotify','bandcamp','youtube','itunes','play']
 // import '../css/blog-post.css'; // make it pretty!
 
 export default function Template({
@@ -11,7 +11,7 @@ export default function Template({
   const { markdownRemark: post } = data; // data.markdownRemark holds our post data
    let image = post.frontmatter.coverImage
               ? <Img className=" processed" sizes={post.frontmatter.coverImage.childImageSharp.sizes} />
-              : <img className="release__thumbnail processed" src="" />
+              : <img className="release__thumbnail processed" alt='Cover' src="" />
 
   
   

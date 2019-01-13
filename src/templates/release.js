@@ -11,8 +11,8 @@ export default function Template({
 }) {
   const { markdownRemark: post } = data; // data.markdownRemark holds our post data
    let image = post.frontmatter.coverImage
-              ? <Img className=" processed" sizes={post.frontmatter.coverImage.childImageSharp.sizes} />
-              : <img className="release__thumbnail processed" src="" />
+              ? <Img className=" processed" alt='Album Cover' sizes={post.frontmatter.coverImage.childImageSharp.sizes} />
+              : <img className="release__thumbnail processed" alt='Album Cover' src="" />
 
    let socials = {}
 

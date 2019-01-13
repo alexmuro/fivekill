@@ -1,12 +1,13 @@
 import React from 'react'
-import Link,  { push }  from 'gatsby-link'
+import Link from 'gatsby-link'
 import './sidebar.scss'
+import { navigateTo } from 'gatsby-link'
 
 function navigate(event, url) {
   console.log('event',event.target.getAttribute('data-location'))
   //window.location = url
   if(event.target.getAttribute('type') === 'radio') {
-    push(event.target.getAttribute('data-location'))
+    navigateTo(event.target.getAttribute('data-location'))
   }
 }
 

@@ -13,7 +13,7 @@ export default function ArtistTemplate({
     console.log('artist data',data)
     let image = post.frontmatter.pressPhoto
               ? <Img className=" processed" sizes={post.frontmatter.pressPhoto.childImageSharp.sizes} />
-              : <img className="release__thumbnail processed" src="" />
+              : <img className="release__thumbnail processed" alt="Artist" src="" />
 
     let socials = {}
 

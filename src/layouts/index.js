@@ -17,7 +17,7 @@ const TemplateWrapper = (props) => {
         ]}
       />
       <Sidebar />
-      {props.children()}
+      {props.children}
       <div className="border border__top"></div>
       <div className="border border__left"></div>
       <div className="border border__right"></div>

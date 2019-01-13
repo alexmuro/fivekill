@@ -6,7 +6,7 @@ import '../components/Screen/screen_release.scss'
 
 export default function Index({ data }) {
   const { edges: releases } = data.allMarkdownRemark;
-  
+  console.log('release', data)
   return (
 	  <section className='content'>
       <Screen title={'Releases'} subtitle={' on fivekill'}>
@@ -15,10 +15,10 @@ export default function Index({ data }) {
 	        .map(({ node: post }) => {
             let image = post.frontmatter.coverImage
               ? <Img className=" processed" sizes={post.frontmatter.coverImage.childImageSharp.sizes} />
-              : <img className="release__thumbnail processed" src="" />
+              : <img className="release__thumbnail processed" alt="Album Cover" src="" />
 	          return (
 	           	<Link to={post.frontmatter.path} className="details__release" >
-		        		<div className='img__release'> 
+		        		<div className='img__release'>
                   {image}
                 </div>
                 <div className='content__release'>
@@ -60,7 +60,7 @@ export const pageQuery = graphql`
             artist
             releaseNumber
             coverImage {
-            childImageSharp {
+              childImageSharp {
               resize(width: 768, height: 768) {
                 src
               }

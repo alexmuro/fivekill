@@ -6,7 +6,7 @@ const IndexPage = (props) => {
 
   const socials = props.socials ? Object.keys(props.socials).map(key => {
     return (
-      <a className={"artist-social " + key} href={props.socials[key]} target="_blank">{key}</a>
+      <a className={"artist-social " + key} href={props.socials[key]} target="_blank" rel="noopener noreferrer">{key}</a>
     )
   }) : []
   return (

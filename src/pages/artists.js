@@ -18,7 +18,7 @@ export default function Index({ data }) {
             .map(({ node: post }) => {
               let image = post.frontmatter.pressPhoto
                 ? <Img className=" processed" sizes={post.frontmatter.pressPhoto.childImageSharp.sizes} />
-                : <img className="artist__thumbnail processed" src="" />
+                : <img className="artist__thumbnail processed" alt="Artist" src="" />
               return (
                 <Link to={post.frontmatter.path} className="details__artist" >
                   <div className='img__artist'> 
