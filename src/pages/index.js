@@ -77,6 +77,10 @@ export default function  IndexPage () {
 				const { edges: news } = data.news;
 				let futureReleases = releases
 					.map(makeDate)
+					.filter((d,i) => i < 6)
+
+					console.log('news', news)
+					let filternews = news.filter((d,i) => i < 6);
 				// 	.filter(release => {
 				// 		return release.frontmatter.date > NOW
 				// 	})
@@ -94,18 +98,15 @@ export default function  IndexPage () {
 
 				  <section className='content sectionContainer'>
 				  	<Helmet title={`Home - Fivekill`} />
-				  	<Share />
-				  
+				  	
 			  		<ReleaseList 
 				  		title='LATEST RELEASES'
 				  		releases={futureReleases}
 				  	/>
 				  	
-
-				  
 				  	<NewsList
 				  		title='NEWS'
-				  		news={news}
+				  		news={filternews}
 				  	/>
 
 				  	
