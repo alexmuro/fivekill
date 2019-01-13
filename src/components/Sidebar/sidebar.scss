@@ -28,7 +28,8 @@ a.nav-link,a.nav-link:hover{
 }
 section.side-nav .section__inner{
     max-width:none;
-    margin:0 auto
+    margin:0 auto;
+    z-index: 999;
 }
 section.side-nav ul.side-nav{
     list-style:none;
