@@ -1,13 +1,12 @@
 ---
 name: Bruiser and Bicycle
 path: /artists/bruiser-and-bicycle
-date: 2019-04-02T14:42:50.955Z
-pressPhoto: /static/assets/img_6391.jpg
-band-id: hate-club
-website: ''
-spotify: 'https://open.spotify.com/artist/2h4khMsUxbt8oNmAkMCBw1'
-bandcamp: 'https://hateclubalbany.bandcamp.com/'
-facebook: ''
-press: 'https://twitter.com/en_cohen/status/1112536625714597888'
+date: 2019-04-02T14:55:56.799Z
+pressPhoto: /static/assets/img_4140.jpg
+band-id: Bruiser-and-Bicycle
+spotify: 'https://open.spotify.com/artist/06ySZdJ1MzvRgjsNHKzAeM'
+bandcamp: >-
+  https://bruiserandbicycle.bandcamp.com/?fbclid=IwAR0fIdxCq8PHuBfDB8bQjAin5nJDu9n8Q6KRGENTHmq_lBPjfFwAB0zGmlQ
+facebook: 'https://www.facebook.com/Bruiser.Bicycle/'
 ---
-Albany NY’s self-described “tweemo” band Hate Club are a staple of the local DIY scene; if there’s a basement or house that hosts shows, they’ve most likely played there. The band charms audiences up and down the country with their trademark blend of sarcasm and self-affirmation, supported by a powerful indie punk backdrop. Their witty lyrics take sharp aim at a slew of targets: oblivious men, aging, uncertainty, complacency, self-doubt. Meanwhile, their anthemic songwriting and arrangement chops continue to grow with each new release. Recently, their raucous and energetic (and often loud) live performance temperament has grown slicker and more powerful, while their recorded output has begun to explore sonic territory often not touched by basement rock bands. They’re one of upstate’s finest musical offerings and will surely continue to build their devoted audience as they take their second journey to SXSW and back later this year.
+In its brief 2-year existence, Bruiser & Bicycle has already gone through more sonic permutations than most bands go through in their whole life cycle. The driving force throughout has remained the mindful, expressionist songwriting of core members Nick Whittemore and Keegan Graziane. First they were a peckish post-punk basement-core group with dark undertones and synesthetic lyrics. This iteration generated positive press and audience response to their debut LP, “You’re All Invited.” Membership shuffles pared the group down to the core duo, who shed their original persona by hunkering down in Philadelphia’s Headroom Studio to create an 8.5-minute song suite of warped chamber pop called “Turn to Dirt,” featuring forays into synthesis and string textures from Alex G collaborator Molly Germer. In an additional mischievous act, they elected to release this track as the B-side to a split with Albany “tweemo-punk” mainstays Hate Club, further enhancing the dramatic genre contrast of their departure into the unknown.
