@@ -1,6 +1,6 @@
 ---
 path: /releases/theabyssmals-gospels
-date: 2019-04-25T18:25:45.868Z
+date: 2019-04-19T04:25:00.000Z
 coverImage: /static/assets/abyssmalsalbum_frontcover.png
 title: 'Gospels, Hymns and Other Trash!'
 releaseNumber: 5K011
