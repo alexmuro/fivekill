@@ -1,5 +1,5 @@
 ---
-path: /releases/hate-club
+path: /releases/a-clear-mistake
 date: 2019-03-23T14:39:00.488Z
 coverImage: /static/assets/a-clear-mistake-final.jpg
 title: A Clear Mistake
