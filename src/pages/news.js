@@ -6,11 +6,9 @@ import '../components/Screen/screen_release.scss'
 
 import { StaticQuery, graphql } from "gatsby"
 
-export default function Index() {
-  return (
-    <StaticQuery
-      query={pageQuery}
-      render={(data) => {
+export default function Index({data}) {
+  
+    
         const { edges: news } = data.allMarkdownRemark;
   
         return (
@@ -47,13 +45,13 @@ export default function Index() {
             </Screen>
       	  </section>
         )
-      }}
-    />
-	)
+    
+  
+	
 }
 
 
-const pageQuery = graphql`
+export const pageQuery = graphql`
   query NewsQuery {
     allMarkdownRemark(
       filter: { fileAbsolutePath: {regex : "\/news/"} },
