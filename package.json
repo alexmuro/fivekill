@@ -3,11 +3,6 @@
   "description": "Fivekill Reocrds website",
   "version": "1.0.0",
   "author": "Alex Muro <alex@b3nson.net>",
-  "workspaces": {
-    "nohoist": [
-      "gatsby*"
-    ]
-  },
   "dependencies": {
     "gatsby": "^2.0.0",
     "gatsby-image": "^2.0.14",
