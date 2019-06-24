@@ -3,8 +3,7 @@ module.exports = {
     title: `Fivekill Records`,
   },
   plugins: [
-  	`gatsby-plugin-react-helmet`,
-    `gatsby-plugin-netlify-cms`,
+  	`gatsby-plugin-netlify-cms`,
     `gatsby-plugin-layout`,
     `gatsby-plugin-sass`,
     {

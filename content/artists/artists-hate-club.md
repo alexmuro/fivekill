@@ -5,8 +5,7 @@ date: 2019-04-02T14:59:27.429Z
 pressPhoto: /static/assets/img_6391.jpg
 band-id: hate-club
 spotify: 'https://open.spotify.com/artist/2h4khMsUxbt8oNmAkMCBw1'
-bandcamp: >-
-  https://hateclubalbany.bandcamp.com/?fbclid=IwAR0m__Bb1WbzCyx7Q0L_iyKEV3QLD3868B2GuxAZQgUGU463RJrsdr4_Om8
+bandcamp: 'https://hateclubalbany.bandcamp.com/'
 facebook: 'https://www.facebook.com/HateClubAlbany/'
 ---
 

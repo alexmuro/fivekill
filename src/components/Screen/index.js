@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import SpotifyFooter from './SpotifyFooter'
 import './screen.scss'
 
 const IndexPage = (props) => {
@@ -34,6 +35,7 @@ const IndexPage = (props) => {
               <div className="ps-scrollbar-y" tabIndex={0} style={{top: 0, height: 120}} />
             </div>
         </div>
+        <SpotifyFooter />
       </div>
     </div>
   )

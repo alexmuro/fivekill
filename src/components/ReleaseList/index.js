@@ -41,6 +41,7 @@ function Album(props) {
 
 export default function Index(props) {
   //const { edges: releases } = data.allMarkdownRemark;
+  console.log('what?', props)
   let albums = props.releases
     .filter(release => release.frontmatter.title.length > 0)
     .map((release,index) => <Album key={release.id} release={release} />)
