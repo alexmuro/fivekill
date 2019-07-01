@@ -2,7 +2,7 @@
 title: Five Kill Records Launches
 path: /news/launch_2
 date: '2018-04-24T07:40:05-04:00'
-coverImage: /static/assets/gf.jpg
+coverImage: /static/assets/fivekill-horiz.png
 ---
 Five Kill Records is a not-for profit independent record label based out of New York’s Capital Region. Named after the confluence of five kills (rivers) where Albany was first settled as a Dutch colony—Rutten Kill, Vosen Kill, Beaver Kill, Normans Kill and Patroon Creek—the label itself is a confluence of five Albany/Troy-area professional and DIY recording collectives and labels: B3nson Recording Company, Swordpaw Collective, Collar City Records, The Rev Records, and Bee Side Cassettes.
 
