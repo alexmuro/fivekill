@@ -20,7 +20,18 @@ const IndexPage = () => (
 			 services to enrich the region’s creative economy. Fivekill is a not for profit record label reinvesting
 			 its income back into services for artists. 
 			</p>
-		
+			<SectionHeader title='DONATE' />
+			<p>
+			 Five Kill Records is a designated 501c3 Not For Profit Organization and accepts tax deductable donations to help maintain its operations
+			 and important mission of forwarding the Arts by helping artists reach a wider audience and teaching musicians how to successfully promote their craft.
+			 <center style={{padding: '20px'}}>
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+					<input type="hidden" name="cmd" value="_s-xclick" />
+					<input type="hidden" name="hosted_button_id" value="XSRLYG7M7KL2U" />
+					<input type="image" src="https://www.fivekillrecords.com/images/button_donate.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+					<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+				</form>
+			</center>
 			
 			<SectionHeader title='CONTACT' />
 			<p>
@@ -33,6 +44,8 @@ const IndexPage = () => (
 			they will not get listened to.
 			</p>
 			
+
+			</p>
 		</div>
       </Screen>
   </section>
