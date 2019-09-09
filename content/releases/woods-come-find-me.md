@@ -3,7 +3,7 @@ path: /releases/woods-come-find-me
 date: 2019-02-22T15:32:30.809Z
 coverImage: /static/assets/front-artwork.jpg
 title: Woods Come Find Me
-releaseNumber: 5k009
+releaseNumber: 5K009
 artist: Bruiser and Bicycle
 band-id: Bruiser-and-Bicycle
 spotify: 'https://open.spotify.com/artist/06ySZdJ1MzvRgjsNHKzAeM'
