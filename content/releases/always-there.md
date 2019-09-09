@@ -3,7 +3,7 @@ path: /releases/always-there
 date: 2019-10-18T04:00:16.536Z
 coverImage: /static/assets/full-body-always-there-album-cover.jpg
 title: Always There
-releaseNumber: 5K014
+releaseNumber: 5K016
 artist: Full Body
 band-id: full-body
 releaseType: LP
