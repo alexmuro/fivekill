@@ -35,7 +35,10 @@ const IndexPage = (props) => {
               <div className="ps-scrollbar-y" tabIndex={0} style={{top: 0, height: 120}} />
             </div>
         </div>
-        <SpotifyFooter />
+        { props.spotify ? 
+          <SpotifyFooter spotify={props.spotify} band={props.subtitle} album={props.title}/>
+          : ''
+        }
       </div>
     </div>
   )

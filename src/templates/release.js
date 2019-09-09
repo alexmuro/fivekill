@@ -25,7 +25,12 @@ export default function Template({
   
   return (
     <section className='content'>
-      <Screen title={post.frontmatter.title} subtitle={` by ${post.frontmatter.artist}`} socials={socials}>
+      <Screen 
+        title={post.frontmatter.title} 
+        subtitle={` by ${post.frontmatter.artist}`} 
+        socials={ socials }
+        spotify={ post.frontmatter.spotify ? post.frontmatter.spotify : null }
+        >
         <Helmet title={`${post.frontmatter.title} - Fivekill`} />
         <div className="details__release" >
           <div className='img__release'> 
@@ -61,6 +66,7 @@ export default function Template({
         </div>
         <div className="blog-post">
           <SectionHeader title='ALBUM BLURB' />
+          
           <div
             className="album-release-content"
             style={{textAlign:'justify'}}
