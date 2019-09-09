@@ -3,7 +3,7 @@ path: /releases/front-biz-lunch-money
 date: 2019-06-13T16:48:28.149Z
 coverImage: /static/assets/lunch-money-cover-1600x1600.png
 title: Lunch Money
-releaseNumber: 5k013
+releaseNumber: 5K013
 artist: Front Biz
 band-id: Front-Biz
 spotify: 'https://open.spotify.com/artist/47Z4IxQ8i4T64YIGdMpaFy'
