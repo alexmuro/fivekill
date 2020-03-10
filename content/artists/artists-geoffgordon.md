@@ -1,5 +1,5 @@
 ---
-name: geoff gordon
+name: Geoff gordon
 path: /artists/geoffgordon
 date: 2020-03-06T20:34:04.429Z
 pressPhoto: /static/assets/image5.jpg
